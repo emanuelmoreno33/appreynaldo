@@ -1574,7 +1574,7 @@
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(2285, 1402)
+			location   	(2498, 1452)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1586,7 +1586,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@37
-			    location   	(2139, 1221)
+			    location   	(2352, 1271)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	292
@@ -1598,7 +1598,7 @@
 			quidu      	"5BE1D2DA031B"
 			compartment 	(object Compartment
 			    Parent_View 	@37
-			    location   	(2139, 1282)
+			    location   	(2352, 1332)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1619,7 +1619,7 @@
 			annotation 	8
 			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$54" @38
-			location   	(1773, 1762)
+			location   	(1879, 1788)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1635,30 +1635,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$55" @39
 				Parent_View 	@38
-				location   	(1023, 1117)
+				location   	(1129, 1143)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5BE2AE0101A0"
 				client     	@38
 				supplier   	@15
 				vertices   	(list Points
-				    (1773, 1762)
-				    (1417, 2015))
+				    (1879, 1788)
+				    (1417, 2040))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$56" @40
 				Parent_View 	@38
-				location   	(1023, 1117)
+				location   	(1129, 1143)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5BE2AE0101A2"
 				client     	@38
 				supplier   	@37
 				vertices   	(list Points
-				    (1773, 1762)
-				    (2129, 1510))
+				    (1879, 1788)
+				    (2342, 1536))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$90" @41
-			location   	(1942, 1336)
+			location   	(2049, 1360)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1674,27 +1674,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$91" @42
 				Parent_View 	@41
-				location   	(945, 634)
+				location   	(1052, 658)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5BE2B0830295"
 				client     	@41
 				supplier   	@37
 				vertices   	(list Points
-				    (1942, 1336)
-				    (2129, 1372))
+				    (2049, 1360)
+				    (2342, 1420))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$92" @43
 				Parent_View 	@41
-				location   	(945, 634)
+				location   	(1052, 658)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5BE2B0830297"
 				client     	@41
 				supplier   	@11
 				vertices   	(list Points
-				    (1942, 1336)
-				    (1756, 1300))
+				    (2049, 1360)
+				    (1756, 1301))
 				line_style 	0)))
 		    (object ClassView "Class" "Logical View::Juego" @44
 			ShowCompartmentStereotypes 	TRUE
@@ -1745,7 +1745,7 @@
 			annotation 	8
 			autoResize 	TRUE)
 		    (object AssociationViewNew "$UNNAMED$51" @45
-			location   	(2060, 1097)
+			location   	(2178, 1144)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1761,27 +1761,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$52" @46
 				Parent_View 	@45
-				location   	(850, 233)
+				location   	(968, 280)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5BE2ADFF016B"
 				client     	@45
 				supplier   	@37
 				vertices   	(list Points
-				    (2060, 1097)
-				    (2142, 1208))
+				    (2178, 1144)
+				    (2342, 1301))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$53" @47
 				Parent_View 	@45
-				location   	(850, 233)
+				location   	(968, 280)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5BE2ADFF016D"
 				client     	@45
 				supplier   	@44
 				vertices   	(list Points
-				    (2060, 1097)
-				    (1978, 987))
+				    (2178, 1144)
+				    (2015, 987))
 				line_style 	0)))
 		    (object ClassView "Class" "Logical View::Ranking_Categorias" @48
 			ShowCompartmentStereotypes 	TRUE
