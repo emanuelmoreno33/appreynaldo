@@ -11,7 +11,43 @@
 	(object Attribute
 	    tool       	"Java"
 	    name       	"IDE"
-	    value      	"Internal Editor"))
+	    value      	"Internal Editor")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply3"
+	    value      	""))
     quid       	"5BE8CA34002F"
     enforceClosureAutoLoad 	FALSE
     defaults   	(object defaults
@@ -336,7 +372,7 @@
 		origin_y   	922
 		items      	(list diagram_item_list
 		    (object CategoryView "Logical View::Base de datos" @1
-			location   	(1550, 2975)
+			location   	(1547, 3194)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -348,7 +384,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@1
-			    location   	(1406, 2891)
+			    location   	(1403, 3110)
 			    fill_color 	13434879
 			    nlines     	2
 			    max_width  	288
@@ -1087,7 +1123,7 @@
 			width      	300
 			height     	180)
 		    (object CategoryView "Logical View::AdminComunidadIH" @46
-			location   	(1722, 847)
+			location   	(1560, 859)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1099,7 +1135,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@46
-			    location   	(1578, 763)
+			    location   	(1416, 775)
 			    fill_color 	13434879
 			    nlines     	2
 			    max_width  	288
@@ -1122,7 +1158,7 @@
 			    (1513, 1773))
 			line_style 	0)
 		    (object CategoryView "Logical View::FondeadoraIH" @48
-			location   	(563, 656)
+			location   	(409, 440)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1134,7 +1170,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@48
-			    location   	(419, 572)
+			    location   	(265, 356)
 			    fill_color 	13434879
 			    nlines     	2
 			    max_width  	288
@@ -1153,8 +1189,8 @@
 			client     	@46
 			supplier   	@48
 			vertices   	(list Points
-			    (1571, 821)
-			    (713, 679))
+			    (1409, 803)
+			    (559, 494))
 			line_style 	0)
 		    (object ImportView "" @50
 			stereotype 	TRUE
@@ -1163,8 +1199,8 @@
 			client     	@45
 			supplier   	@48
 			vertices   	(list Points
-			    (999, 295)
-			    (713, 529))
+			    (959, 253)
+			    (559, 388))
 			line_style 	0)
 		    (object ImportView "" @51
 			stereotype 	TRUE
@@ -1173,8 +1209,8 @@
 			client     	@11
 			supplier   	@48
 			vertices   	(list Points
-			    (1440, 398)
-			    (713, 610))
+			    (1440, 366)
+			    (559, 428))
 			line_style 	0)
 		    (object ImportView "" @52
 			stereotype 	TRUE
@@ -1183,8 +1219,8 @@
 			client     	@12
 			supplier   	@48
 			vertices   	(list Points
-			    (1993, 614)
-			    (713, 650))
+			    (1993, 594)
+			    (559, 453))
 			line_style 	0)))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"5BE8CA340032"
