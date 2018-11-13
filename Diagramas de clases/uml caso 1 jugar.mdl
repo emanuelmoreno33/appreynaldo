@@ -266,7 +266,7 @@
 			type       	"int")
 		    (object ClassAttribute "id_juego"
 			quid       	"5BE2B71D02B0"
-			type       	"string")
+			type       	"int")
 		    (object ClassAttribute "elo"
 			quid       	"5BE2B2D100BD"
 			type       	"double")))
@@ -1057,7 +1057,7 @@
 			    fill_color 	13434879
 			    anchor     	2
 			    nlines     	8
-			    max_width  	458
+			    max_width  	481
 			    justify    	1)
 			width      	478
 			height     	486
@@ -1175,7 +1175,7 @@
 				supplier   	@3
 				vertices   	(list Points
 				    (652, 1641)
-				    (757, 1611))
+				    (757, 1610))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$86" @9
 				Parent_View 	@7
@@ -1187,7 +1187,7 @@
 				supplier   	@2
 				vertices   	(list Points
 				    (652, 1641)
-				    (548, 1671))
+				    (548, 1670))
 				line_style 	0)))
 		    (object ClassView "Class" "Logical View::Historial_Creditos" @10
 			ShowCompartmentStereotypes 	TRUE
@@ -1262,7 +1262,7 @@
 				supplier   	@10
 				vertices   	(list Points
 				    (362, 1275)
-				    (388, 1054))
+				    (387, 1054))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$113" @13
 				Parent_View 	@11
@@ -1274,7 +1274,7 @@
 				supplier   	@2
 				vertices   	(list Points
 				    (362, 1275)
-				    (336, 1497))
+				    (335, 1497))
 				line_style 	0)))
 		    (object ClassView "Class" "Logical View::Resultado" @14
 			ShowCompartmentStereotypes 	TRUE
@@ -1349,7 +1349,7 @@
 				supplier   	@2
 				vertices   	(list Points
 				    (966, 1909)
-				    (548, 1802))
+				    (548, 1801))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$101" @17
 				Parent_View 	@15
@@ -1361,7 +1361,7 @@
 				supplier   	@14
 				vertices   	(list Points
 				    (966, 1909)
-				    (1384, 2016))
+				    (1384, 2017))
 				line_style 	0)))
 		    (object ClassView "Class" "Logical View::Aportacion" @18
 			ShowCompartmentStereotypes 	TRUE
@@ -1448,7 +1448,7 @@
 				supplier   	@3
 				vertices   	(list Points
 				    (1261, 1318)
-				    (1190, 1376))
+				    (1190, 1375))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$102" @22
 			location   	(1568, 1590)
@@ -1487,7 +1487,7 @@
 				supplier   	@18
 				vertices   	(list Points
 				    (1568, 1590)
-				    (1557, 1304))
+				    (1556, 1304))
 				line_style 	0)))
 		    (object ClassView "Class" "Logical View::Cuota" @25
 			ShowCompartmentStereotypes 	TRUE
@@ -1823,7 +1823,7 @@
 				supplier   	@14
 				vertices   	(list Points
 				    (2029, 1769)
-				    (1791, 1931))
+				    (1791, 1930))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$56" @40
 				Parent_View 	@38
@@ -1835,7 +1835,7 @@
 				supplier   	@37
 				vertices   	(list Points
 				    (2029, 1769)
-				    (2268, 1607))
+				    (2268, 1606))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$90" @41
 			location   	(2017, 1262)
