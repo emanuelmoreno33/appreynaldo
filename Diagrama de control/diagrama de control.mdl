@@ -11,7 +11,43 @@
 	(object Attribute
 	    tool       	"Java"
 	    name       	"IDE"
-	    value      	"Internal Editor"))
+	    value      	"Internal Editor")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply3"
+	    value      	""))
     quid       	"5BEC73AA0238"
     enforceClosureAutoLoad 	FALSE
     defaults   	(object defaults
@@ -346,7 +382,11 @@
 			    (object Uses_Relationship
 				quid       	"5BEC777E032F"
 				supplier   	"Logical View::Clase de control::Aportaciones"
-				quidu      	"5BEC747E019A"))
+				quidu      	"5BEC747E019A")
+			    (object Uses_Relationship
+				quid       	"5BF21828006B"
+				supplier   	"Logical View::Clase de control::Encuentros"
+				quidu      	"5BEC74620127"))
 			class_attributes 	(list class_attribute_list
 			    (object ClassAttribute "id_resultado"
 				quid       	"5BEC7B3C01AA")
@@ -442,7 +482,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	7
-				    max_width  	344
+				    max_width  	365
 				    justify    	1)
 				width      	364
 				height     	436
@@ -490,7 +530,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	6
-				    max_width  	259
+				    max_width  	278
 				    justify    	1)
 				width      	280
 				height     	386
@@ -538,7 +578,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	5
-				    max_width  	419
+				    max_width  	440
 				    justify    	1)
 				width      	610
 				height     	336
@@ -586,7 +626,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	6
-				    max_width  	303
+				    max_width  	321
 				    justify    	1)
 				width      	324
 				height     	386
@@ -634,7 +674,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	5
-				    max_width  	481
+				    max_width  	509
 				    justify    	1)
 				width      	502
 				height     	336
@@ -682,7 +722,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	4
-				    max_width  	319
+				    max_width  	340
 				    justify    	1)
 				width      	340
 				height     	286
@@ -730,7 +770,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	4
-				    max_width  	303
+				    max_width  	321
 				    justify    	1)
 				width      	324
 				height     	286
@@ -778,7 +818,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	6
-				    max_width  	272
+				    max_width  	290
 				    justify    	1)
 				width      	292
 				height     	386
@@ -826,7 +866,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	6
-				    max_width  	281
+				    max_width  	300
 				    justify    	1)
 				width      	302
 				height     	386
@@ -874,7 +914,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	5
-				    max_width  	406
+				    max_width  	431
 				    justify    	1)
 				width      	426
 				height     	336
@@ -922,7 +962,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	3
-				    max_width  	247
+				    max_width  	265
 				    justify    	1)
 				width      	268
 				height     	236
@@ -970,7 +1010,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	6
-				    max_width  	356
+				    max_width  	378
 				    justify    	1)
 				width      	392
 				height     	386
@@ -1018,7 +1058,7 @@
 				    fill_color 	13434879
 				    anchor     	2
 				    nlines     	5
-				    max_width  	281
+				    max_width  	300
 				    justify    	1)
 				width      	302
 				height     	336
@@ -1232,94 +1272,7 @@
 				    (1675, 277)
 				    (2059, 451))
 				line_style 	0)
-			    (object ClassView "Class" "Logical View::Clase de control::Cuota_Ranking" @31
-				ShowCompartmentStereotypes 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(2116, 169)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@31
-				    location   	(1956, 63)
-				    fill_color 	13434879
-				    nlines     	1
-				    max_width  	320
-				    justify    	0
-				    label      	"Cuota_Ranking")
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"5BEC79060361"
-				compartment 	(object Compartment
-				    Parent_View 	@31
-				    location   	(1956, 124)
-				    font       	(object Font
-					size       	10
-					face       	"Arial"
-					bold       	FALSE
-					italics    	FALSE
-					underline  	FALSE
-					strike     	FALSE
-					color      	0
-					default_color 	TRUE)
-				    icon_style 	"Icon"
-				    fill_color 	13434879
-				    anchor     	2
-				    nlines     	3
-				    max_width  	243
-				    justify    	1)
-				width      	338
-				height     	236
-				annotation 	8
-				autoResize 	TRUE)
-			    (object AssociationViewNew "$UNNAMED$0" @32
-				location   	(1810, 180)
-				font       	(object Font
-				    size       	10
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"5BEC796502CA"
-				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$1" @33
-					Parent_View 	@32
-					location   	(-306, 11)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"5BEC79660067"
-					client     	@32
-					supplier   	@28
-					vertices   	(list Points
-					    (1810, 180)
-					    (1675, 185))
-					line_style 	0)
-				    (object RoleView "$UNNAMED$2" @34
-					Parent_View 	@32
-					location   	(-306, 11)
-					stereotype 	TRUE
-					line_color 	3342489
-					quidu      	"5BEC7966006A"
-					client     	@32
-					supplier   	@31
-					vertices   	(list Points
-					    (1810, 180)
-					    (1946, 175))
-					line_style 	0)))
-			    (object ClassView "Class" "Logical View::Clase de control::Cuotas" @35
+			    (object ClassView "Class" "Logical View::Clase de control::Cuotas" @31
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1334,7 +1287,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@35
+				    Parent_View 	@31
 				    location   	(2510, 59)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1346,7 +1299,7 @@
 				fill_color 	13434879
 				quidu      	"5BEC74CB032A"
 				compartment 	(object Compartment
-				    Parent_View 	@35
+				    Parent_View 	@31
 				    location   	(2510, 120)
 				    font       	(object Font
 					size       	10
@@ -1367,16 +1320,103 @@
 				height     	286
 				annotation 	8
 				autoResize 	TRUE)
-			    (object UsesView "" @36
+			    (object UsesView "" @32
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5BEC773F0057"
-				client     	@35
+				client     	@31
 				supplier   	@10
 				vertices   	(list Points
 				    (2727, 333)
 				    (2740, 459))
 				line_style 	0)
+			    (object ClassView "Class" "Logical View::Clase de control::Cuota_Ranking" @33
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(2116, 169)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@33
+				    location   	(1956, 63)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	320
+				    justify    	0
+				    label      	"Cuota_Ranking")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5BEC79060361"
+				compartment 	(object Compartment
+				    Parent_View 	@33
+				    location   	(1956, 124)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	3
+				    max_width  	243
+				    justify    	1)
+				width      	338
+				height     	236
+				annotation 	8
+				autoResize 	TRUE)
+			    (object AssociationViewNew "$UNNAMED$0" @34
+				location   	(1810, 180)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5BEC796502CA"
+				roleview_list 	(list RoleViews
+				    (object RoleView "$UNNAMED$1" @35
+					Parent_View 	@34
+					location   	(-306, 11)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5BEC79660067"
+					client     	@34
+					supplier   	@28
+					vertices   	(list Points
+					    (1810, 180)
+					    (1675, 184))
+					line_style 	0)
+				    (object RoleView "$UNNAMED$2" @36
+					Parent_View 	@34
+					location   	(-306, 11)
+					stereotype 	TRUE
+					line_color 	3342489
+					quidu      	"5BEC7966006A"
+					client     	@34
+					supplier   	@33
+					vertices   	(list Points
+					    (1810, 180)
+					    (1946, 174))
+					line_style 	0)))
 			    (object AssociationViewNew "$UNNAMED$3" @37
 				location   	(2392, 177)
 				font       	(object Font
@@ -1399,10 +1439,10 @@
 					line_color 	3342489
 					quidu      	"5BEC7967007F"
 					client     	@37
-					supplier   	@35
+					supplier   	@31
 					vertices   	(list Points
 					    (2392, 177)
-					    (2500, 181))
+					    (2500, 180))
 					line_style 	0)
 				    (object RoleView "$UNNAMED$5" @39
 					Parent_View 	@37
@@ -1411,10 +1451,10 @@
 					line_color 	3342489
 					quidu      	"5BEC79670081"
 					client     	@37
-					supplier   	@31
+					supplier   	@33
 					vertices   	(list Points
 					    (2392, 177)
-					    (2285, 174))
+					    (2285, 173))
 					line_style 	0)))
 			    (object UsesView "" @40
 				stereotype 	TRUE
@@ -1478,6 +1518,16 @@
 				vertices   	(list Points
 				    (796, 1139)
 				    (764, 1321))
+				line_style 	0)
+			    (object UsesView "" @46
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5BF21828006B"
+				client     	@13
+				supplier   	@8
+				vertices   	(list Points
+				    (1292, 1833)
+				    (1613, 1903))
 				line_style 	0))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
@@ -1489,7 +1539,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object CategoryView "Logical View::Clase de control" @46
+		    (object CategoryView "Logical View::Clase de control" @47
 			location   	(478, 209)
 			font       	(object Font
 			    size       	10
@@ -1501,7 +1551,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@46
+			    Parent_View 	@47
 			    location   	(334, 125)
 			    fill_color 	13434879
 			    nlines     	2

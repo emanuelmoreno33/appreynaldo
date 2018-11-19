@@ -189,7 +189,7 @@
 			quidu      	"5BE8D3EF0373")
 		    (object Visibility_Relationship
 			quid       	"5BE8DA690352"
-			supplier   	"Logical View::Aportaciones"
+			supplier   	"Logical View::Aportacion"
 			quidu      	"5BE8D6E003BC")
 		    (object Visibility_Relationship
 			quid       	"5BE8DF4C01BA"
@@ -198,7 +198,7 @@
 		exportControl 	"Public"
 		logical_models 	(list unit_reference_list)
 		logical_presentations 	(list unit_reference_list))
-	    (object Class_Category "Aportaciones"
+	    (object Class_Category "Aportacion"
 		quid       	"5BE8D6E003BC"
 		visible_categories 	(list visibility_relationship_list
 		    (object Visibility_Relationship
@@ -265,7 +265,7 @@
 			quidu      	"5BE8D6D701AB")
 		    (object Visibility_Relationship
 			quid       	"5BE8D9EC0243"
-			supplier   	"Logical View::Aportaciones"
+			supplier   	"Logical View::Aportacion"
 			quidu      	"5BE8D6E003BC"))
 		exportControl 	"Public"
 		logical_models 	(list unit_reference_list)
@@ -596,7 +596,7 @@
 			quidu      	"5BE8D6D701AB"
 			width      	300
 			height     	180)
-		    (object CategoryView "Logical View::Aportaciones" @10
+		    (object CategoryView "Logical View::Aportacion" @10
 			location   	(1094, 2329)
 			font       	(object Font
 			    size       	10
@@ -614,7 +614,7 @@
 			    nlines     	2
 			    max_width  	288
 			    justify    	0
-			    label      	"Aportaciones")
+			    label      	"Aportacion")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -622,7 +622,7 @@
 			width      	300
 			height     	180)
 		    (object CategoryView "Logical View::UsuarioIH" @11
-			location   	(1591, 356)
+			location   	(1569, 471)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -634,7 +634,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@11
-			    location   	(1447, 272)
+			    location   	(1425, 387)
 			    fill_color 	13434879
 			    nlines     	2
 			    max_width  	288
@@ -647,7 +647,7 @@
 			width      	300
 			height     	180)
 		    (object CategoryView "Logical View::AhorradorIH" @12
-			location   	(2144, 611)
+			location   	(1360, 867)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -659,7 +659,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@12
-			    location   	(2000, 527)
+			    location   	(1216, 783)
 			    fill_color 	13434879
 			    nlines     	2
 			    max_width  	288
@@ -1098,7 +1098,7 @@
 			    (2355, 2127))
 			line_style 	0)
 		    (object CategoryView "Logical View::AdminFinancieroIH" @45
-			location   	(1110, 205)
+			location   	(1141, 251)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1110,7 +1110,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@45
-			    location   	(966, 121)
+			    location   	(997, 167)
 			    fill_color 	13434879
 			    nlines     	2
 			    max_width  	288
@@ -1123,7 +1123,7 @@
 			width      	300
 			height     	180)
 		    (object CategoryView "Logical View::AdminComunidadIH" @46
-			location   	(1560, 859)
+			location   	(591, 902)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1135,7 +1135,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@46
-			    location   	(1416, 775)
+			    location   	(447, 818)
 			    fill_color 	13434879
 			    nlines     	2
 			    max_width  	288
@@ -1189,8 +1189,8 @@
 			client     	@46
 			supplier   	@48
 			vertices   	(list Points
-			    (1409, 803)
-			    (559, 494))
+			    (533, 757)
+			    (443, 530))
 			line_style 	0)
 		    (object ImportView "" @50
 			stereotype 	TRUE
@@ -1199,8 +1199,8 @@
 			client     	@45
 			supplier   	@48
 			vertices   	(list Points
-			    (959, 253)
-			    (559, 388))
+			    (990, 289)
+			    (559, 400))
 			line_style 	0)
 		    (object ImportView "" @51
 			stereotype 	TRUE
@@ -1209,8 +1209,8 @@
 			client     	@11
 			supplier   	@48
 			vertices   	(list Points
-			    (1440, 366)
-			    (559, 428))
+			    (1418, 466)
+			    (559, 443))
 			line_style 	0)
 		    (object ImportView "" @52
 			stereotype 	TRUE
@@ -1219,8 +1219,8 @@
 			client     	@12
 			supplier   	@48
 			vertices   	(list Points
-			    (1993, 594)
-			    (559, 453))
+			    (1209, 798)
+			    (559, 507))
 			line_style 	0)))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"5BE8CA340032"
