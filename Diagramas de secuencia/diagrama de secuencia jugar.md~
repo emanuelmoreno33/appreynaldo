@@ -718,8 +718,8 @@
 		zoom       	80
 		max_height 	28350
 		max_width  	21600
-		origin_x   	4246
-		origin_y   	5239
+		origin_x   	0
+		origin_y   	4390
 		items      	(list diagram_item_list
 		    (object InterObjView "Usuario" @3
 			location   	(293, 305)
@@ -2994,7 +2994,7 @@
 			    default_color 	TRUE)
 			label      	(object SegLabel @148
 			    Parent_View 	@147
-			    location   	(3410, 5692)
+			    location   	(3409, 5692)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3154,7 +3154,7 @@
 			    default_color 	TRUE)
 			label      	(object SegLabel @156
 			    Parent_View 	@155
-			    location   	(3808, 5920)
+			    location   	(3807, 5920)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -4886,7 +4886,7 @@
 		    (object Attribute
 			tool       	"Java"
 			name       	"ClassPath"
-			value      	";C:\\Program Files (x86)\\Java\\jdk1.8.0_181\\jre\\lib\\rt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_181\\lib\\dt.jar;C:\\Program Files (x86)\\Java\\jdk1.8.0_181\\lib\\tools.jar")
+			value      	"")
 		    (object Attribute
 			tool       	"Java"
 			name       	"ReferenceClasspath"

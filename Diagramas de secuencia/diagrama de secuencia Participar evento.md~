@@ -11,51 +11,15 @@
 	(object Attribute
 	    tool       	"Java"
 	    name       	"IDE"
-	    value      	"Internal Editor")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagName1"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagText1"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagApply1"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagName2"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagText2"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagApply2"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagName3"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagText3"
-	    value      	"")
-	(object Attribute
-	    tool       	"Java"
-	    name       	"UserDefineTagApply3"
-	    value      	""))
-    quid       	"5BF358C102A5"
+	    value      	"Internal Editor"))
+    quid       	"5BF4473A0254"
     enforceClosureAutoLoad 	FALSE
     defaults   	(object defaults
 	rightMargin 	0.250000
-	leftMargin 	0.500000
+	leftMargin 	0.250000
 	topMargin  	0.250000
-	bottomMargin 	0.250000
-	pageOverlap 	0.000000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
 	clipIconLabels 	TRUE
 	autoResize 	TRUE
 	snapToGrid 	TRUE
@@ -74,93 +38,22 @@
 	showClassOfObject 	TRUE
 	notation   	"Unified")
     root_usecase_package 	(object Class_Category "Use Case View"
-	quid       	"5BF358C102A7"
+	quid       	"5BF4473A0256"
 	exportControl 	"Public"
 	global     	TRUE
 	logical_models 	(list unit_reference_list
-	    (object Class "NewClass"
-		quid       	"5BF35D970276"
-		stereotype 	"Actor")
-	    (object Class "sistema"
-		quid       	"5BF360A40277")
-	    (object Class "interfaz"
-		quid       	"5BF360B401AF")
-	    (object Class "nivel"
-		quid       	"5BF360C702E7")
-	    (object Class "ahorro"
-		quid       	"5BF363290371")
-	    (object Class "tipo_usuario"
-		quid       	"5BF367960391")
 	    (object Mechanism @1
 		logical_models 	(list unit_reference_list
-		    (object Object "$UNNAMED$0"
-			quid       	"5BF3599A0306"
-			collaborators 	(list link_list
-			    (object Link
-				quid       	"5BF35FFD0117"
-				supplier   	"$UNNAMED$1"
-				quidu      	"5BF35EF0005E"
-				messages   	(list Messages
-				    (object Message "verificar usuario"
-					quid       	"5BF367480365"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"1.1"
-					ordinal    	1
-					quidu      	"000000000000"
-					creation   	FALSE)
-				    (object Message "seleccionar cuota"
-					quid       	"5BF383F7004C"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"8"
-					ordinal    	23
-					quidu      	"000000000000"
-					creation   	FALSE)
-				    (object Message "obtener puntuacion"
-					quid       	"5BF38AFC0071"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"10.1"
-					ordinal    	31
-					quidu      	"000000000000"
-					creation   	FALSE)
-				    (object Message "buscar ahorros"
-					quid       	"5BF38BB801F9"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"4"
-					ordinal    	11
-					quidu      	"000000000000"
-					creation   	FALSE)
-				    (object Message "buscar cuotas"
-					quid       	"5BF38C8A0239"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"6"
-					ordinal    	17
-					quidu      	"000000000000"
-					creation   	FALSE))))
-			class      	"Use Case View::interfaz"
-			quidu      	"5BF360B401AF"
-			persistence 	"Transient"
-			creationObj 	FALSE
-			multi      	FALSE)
 		    (object Object "Usuario"
-			quid       	"5BF35E280304"
+			quid       	"5BF448AB000F"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5BF3673003A1"
+				quid       	"5BF448AB0010"
 				supplier   	"$UNNAMED$0"
-				quidu      	"5BF3599A0306"
+				quidu      	"5BF448AB0022"
 				messages   	(list Messages
 				    (object Message "iniciar sesion"
-					quid       	"5BF3673003A2"
+					quid       	"5BF448AB0011"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -168,8 +61,8 @@
 					ordinal    	0
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "buscar encuentro"
-					quid       	"5BF37CFF02C8"
+				    (object Message "buscar evento"
+					quid       	"5BF448AB0013"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -178,61 +71,99 @@
 					quidu      	"000000000000"
 					creation   	FALSE)
 				    (object Message "jugar"
-					quid       	"5BF38AEB02B9"
+					quid       	"5BF448AB0015"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"10"
-					ordinal    	30
-					quidu      	"000000000000"
-					creation   	FALSE)
-				    (object Message "ver ahorros"
-					quid       	"5BF38C1E0361"
-					frequency  	"Aperiodic"
-					synchronization 	"Return"
-					dir        	"FromClientToSupplier"
-					sequence   	"3"
-					ordinal    	10
+					sequence   	"6"
+					ordinal    	26
 					quidu      	"000000000000"
 					creation   	FALSE)))
 			    (object Link
-				quid       	"5BF38C7D0331"
+				quid       	"5BF448AB0019"
 				supplier   	"$UNNAMED$0"
-				quidu      	"5BF3599A0306"
+				quidu      	"5BF448AB0022"
 				messages   	(list Messages
-				    (object Message "ver aportaciones"
-					quid       	"5BF38CC50111"
+				    (object Message "aportacion seleccionada"
+					quid       	"5BF448AB001C"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
 					sequence   	"5"
-					ordinal    	16
-					quidu      	"000000000000"
-					creation   	FALSE)
-				    (object Message "aportacion seleccionada"
-					quid       	"5BF38CE500D9"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"9"
-					ordinal    	24
+					ordinal    	20
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			class      	"Use Case View::NewClass"
-			quidu      	"5BF35D970276"
 			persistence 	"Static"
-			creationObj 	TRUE
+			creationObj 	FALSE
 			multi      	FALSE)
-		    (object Object "$UNNAMED$1"
-			quid       	"5BF35EF0005E"
+		    (object Object "$UNNAMED$0"
+			quid       	"5BF448AB0022"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5BF3675900AE"
+				quid       	"5BF448AB0021"
 				supplier   	"$UNNAMED$1"
-				quidu      	"5BF35EF0005E"
+				quidu      	"5BF448AB002F"
+				messages   	(list Messages
+				    (object Message "verificar usuario"
+					quid       	"5BF448AB0020"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1.1"
+					ordinal    	1
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "seleccionar cuota"
+					quid       	"5BF448AB0023"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"4"
+					ordinal    	19
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "obtener puntuacion"
+					quid       	"5BF448AB0025"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"6.1"
+					ordinal    	27
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "buscar ahorros"
+					quid       	"5BF448AB0027"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"3"
+					ordinal    	14
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Confirmación"
+					quid       	"5BF44BED0167"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"7.2.1.1"
+					ordinal    	38
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			class      	"Use Case View::interfaz"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "$UNNAMED$1"
+			quid       	"5BF448AB002F"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5BF448AB002E"
+				supplier   	"$UNNAMED$1"
+				quidu      	"5BF448AB002F"
 				messages   	(list Messages
 				    (object Message "validar usuario"
-					quid       	"5BF3675900AF"
+					quid       	"5BF448AB002D"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -241,21 +172,39 @@
 					quidu      	"000000000000"
 					creation   	FALSE)
 				    (object Message "verificar puntuacion"
-					quid       	"5BF38B0C0297"
+					quid       	"5BF448AB0057"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"10.1.1"
-					ordinal    	32
+					sequence   	"6.1.1"
+					ordinal    	28
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Revisar más encuentro disponibles del evento"
+					quid       	"5BF44BAF0344"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"7.2"
+					ordinal    	36
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Paso 13"
+					quid       	"5BF44C9403DF"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"7.2.1.1.1"
+					ordinal    	39
 					quidu      	"000000000000"
 					creation   	FALSE)))
 			    (object Link
-				quid       	"5BF3675D00F9"
+				quid       	"5BF448AB0030"
 				supplier   	"$UNNAMED$2"
-				quidu      	"5BF3644D013E"
+				quidu      	"5BF448AB00BD"
 				messages   	(list Messages
 				    (object Message "ver tipo de usuario"
-					quid       	"5BF37A6E02A0"
+					quid       	"5BF448AB0031"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -264,7 +213,7 @@
 					quidu      	"000000000000"
 					creation   	FALSE)
 				    (object Message "tipo de usuario encontrado"
-					quid       	"5BF37A8200C8"
+					quid       	"5BF448AB0033"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"ToClientFromSupplier"
@@ -273,12 +222,12 @@
 					quidu      	"000000000000"
 					creation   	FALSE)))
 			    (object Link
-				quid       	"5BF37CD20008"
+				quid       	"5BF448AB0035"
 				supplier   	"$UNNAMED$0"
-				quidu      	"5BF3599A0306"
+				quidu      	"5BF448AB0022"
 				messages   	(list Messages
 				    (object Message "muestra datos del usuario"
-					quid       	"5BF37CD20009"
+					quid       	"5BF448AB0036"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -286,8 +235,8 @@
 					ordinal    	4
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "peticion de juego"
-					quid       	"5BF3804701F6"
+				    (object Message "peticion de evento"
+					quid       	"5BF448AB0038"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"ToClientFromSupplier"
@@ -295,86 +244,132 @@
 					ordinal    	7
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "mostrar cuotas"
-					quid       	"5BF383BF030C"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"7.1.1.1.1"
-					ordinal    	22
-					quidu      	"000000000000"
-					creation   	FALSE)
 				    (object Message "mostrar encuentro"
-					quid       	"5BF38AB10152"
+					quid       	"5BF448AB003C"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"8.1.1.1.1.1"
-					ordinal    	29
+					sequence   	"4.1.1.1.1.1"
+					ordinal    	25
 					quidu      	"000000000000"
 					creation   	FALSE)
 				    (object Message "mostrar ahorros"
-					quid       	"5BF38C440221"
+					quid       	"5BF448AB003E"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"4.1.1.1.1"
-					ordinal    	15
+					sequence   	"3.1.1.1.1"
+					ordinal    	18
 					quidu      	"000000000000"
 					creation   	FALSE)
 				    (object Message "mostrar resultado"
-					quid       	"5BF3939E0006"
+					quid       	"5BF448AB0040"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"10.1.1.1.2.1"
-					ordinal    	37
+					sequence   	"6.1.1.1.2.1"
+					ordinal    	33
 					quidu      	"000000000000"
 					creation   	FALSE)
 				    (object Message "mostrar saldo actual"
-					quid       	"5BF3949D02C5"
+					quid       	"5BF448AB0042"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"11.1"
-					ordinal    	39
+					sequence   	"7.1"
+					ordinal    	35
 					quidu      	"000000000000"
-					creation   	FALSE)))
-			    (object Link
-				quid       	"5BF3805E0006"
-				supplier   	"ranking_usuario"
-				quidu      	"5BF3659E00B0"
-				messages   	(list Messages
-				    (object Message "buscar ranking jugador"
-					quid       	"5BF3805E0007"
+					creation   	FALSE)
+				    (object Message "Notificar siguiente encuentro"
+					quid       	"5BF44BD40079"
 					frequency  	"Aperiodic"
-					synchronization 	"Simple"
+					synchronization 	"Return"
 					dir        	"FromClientToSupplier"
-					sequence   	"7"
-					ordinal    	18
+					sequence   	"7.2.1"
+					ordinal    	37
 					quidu      	"000000000000"
 					creation   	FALSE)))
 			    (object Link
-				quid       	"5BF3857E0204"
+				quid       	"5BF448AB0047"
 				supplier   	"aportacion"
-				quidu      	"5BF3647802A2"
+				quidu      	"5BF448AB0080"
 				messages   	(list Messages
 				    (object Message "aportacion del jugador"
-					quid       	"5BF3857E0205"
+					quid       	"5BF448AB0048"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"8.1"
-					ordinal    	25
+					sequence   	"4.1"
+					ordinal    	21
 					quidu      	"000000000000"
 					creation   	FALSE)))
 			    (object Link
-				quid       	"5BF3862C03E4"
+				quid       	"5BF448AB004A"
 				supplier   	"juego"
-				quidu      	"5BF365E90374"
+				quidu      	"5BF448AB0064"
 				messages   	(list Messages
 				    (object Message "buscar juego"
-					quid       	"5BF3862C03E5"
+					quid       	"5BF448AB004B"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"2.1.2"
+					ordinal    	12
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "juego encontrado"
+					quid       	"5BF448AB004D"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"2.1.2.1"
+					ordinal    	13
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"5BF448AB004F"
+				supplier   	"resultado"
+				quidu      	"5BF448AB0097"
+				messages   	(list Messages
+				    (object Message "comparar resultado"
+					quid       	"5BF448AB0050"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"6.1.1.1"
+					ordinal    	29
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "obtener ganador"
+					quid       	"5BF448AB0052"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"6.1.1.1.2"
+					ordinal    	31
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"5BF448AB0054"
+				supplier   	"ahorro_categorias"
+				quidu      	"5BF448AB00AE"
+				messages   	(list Messages
+				    (object Message "obtener categoria del ahorro"
+					quid       	"5BF448AB0055"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"3.1"
+					ordinal    	15
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"5BF4499C0147"
+				supplier   	"evento"
+				quidu      	"5BF448AB0071"
+				messages   	(list Messages
+				    (object Message "buscar evento"
+					quid       	"5BF4499C0148"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
@@ -382,8 +377,8 @@
 					ordinal    	8
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "juego encontrado"
-					quid       	"5BF38655020C"
+				    (object Message "evento encontrado"
+					quid       	"5BF449A30318"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"ToClientFromSupplier"
@@ -392,336 +387,239 @@
 					quidu      	"000000000000"
 					creation   	FALSE)))
 			    (object Link
-				quid       	"5BF38B1B0252"
-				supplier   	"resultado"
-				quidu      	"5BF3667B00DD"
+				quid       	"5BF44CEE017D"
+				supplier   	"participante"
+				quidu      	"5BF44CC903A5"
 				messages   	(list Messages
-				    (object Message "comparar resultado"
-					quid       	"5BF38B1B0253"
+				    (object Message "Registrar usuario"
+					quid       	"5BF44CEE017E"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"10.1.1.1"
-					ordinal    	33
+					sequence   	"2.1.1.1.1"
+					ordinal    	10
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "obtener ganador"
-					quid       	"5BF3930B03E6"
+				    (object Message "Usuario registrado"
+					quid       	"5BF44D6C0350"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"ToClientFromSupplier"
-					sequence   	"10.1.1.1.2"
-					ordinal    	35
-					quidu      	"000000000000"
-					creation   	FALSE)))
-			    (object Link
-				quid       	"5BF38BD80192"
-				supplier   	"ahorro_categorias"
-				quidu      	"5BF366A001C2"
-				messages   	(list Messages
-				    (object Message "obtener categoria del ahorro"
-					quid       	"5BF38BD80193"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"4.1"
-					ordinal    	12
+					sequence   	"2.1.1.1.1.1"
+					ordinal    	11
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			class      	"Use Case View::sistema"
-			quidu      	"5BF360A40277"
 			persistence 	"Transient"
-			creationObj 	TRUE
+			creationObj 	FALSE
 			multi      	FALSE)
 		    (object Object "$UNNAMED$2"
-			quid       	"5BF3644D013E"
+			quid       	"5BF448AB00BD"
 			class      	"Use Case View::tipo_usuario"
-			quidu      	"5BF367960391"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "juego"
+			quid       	"5BF448AB0064"
 			persistence 	"Transient"
 			creationObj 	TRUE
 			multi      	FALSE)
-		    (object Object "aportacion"
-			quid       	"5BF3647802A2"
+		    (object Object "ahorro_categorias"
+			quid       	"5BF448AB00AE"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5BF3866C01F3"
-				supplier   	"tipo_encuentro"
-				quidu      	"5BF365E401A9"
+				quid       	"5BF448AB00AD"
+				supplier   	"ahorro"
+				quidu      	"5BF448AB00B3"
 				messages   	(list Messages
-				    (object Message "obtener tipo encuentro"
-					quid       	"5BF3866C01F4"
+				    (object Message "obtener ahorros"
+					quid       	"5BF448AB00AC"
 					frequency  	"Aperiodic"
-					synchronization 	"Return"
+					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"8.1.1"
-					ordinal    	26
+					sequence   	"3.1.1"
+					ordinal    	16
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)
-		    (object Object "ranking_usuario"
-			quid       	"5BF3659E00B0"
+		    (object Object "ahorro"
+			quid       	"5BF448AB00B3"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5BF3806F015E"
-				supplier   	"cuota_ranking"
-				quidu      	"5BF3661B00EA"
+				quid       	"5BF448AB00B2"
+				supplier   	"$UNNAMED$1"
+				quidu      	"5BF448AB002F"
 				messages   	(list Messages
-				    (object Message "buscar cuotas del ranking"
-					quid       	"5BF3806F015F"
+				    (object Message "ahorros encontrados"
+					quid       	"5BF448AB00B1"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"7.1"
-					ordinal    	19
+					sequence   	"3.1.1.1"
+					ordinal    	17
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "evento"
+			quid       	"5BF448AB0071"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "aportacion"
+			quid       	"5BF448AB0080"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5BF448AB007F"
+				supplier   	"tipo_encuentro"
+				quidu      	"5BF448AB0085"
+				messages   	(list Messages
+				    (object Message "obtener tipo encuentro"
+					quid       	"5BF448AB007E"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"4.1.1"
+					ordinal    	22
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "tipo_encuentro"
+			quid       	"5BF448AB0085"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5BF448AB0084"
+				supplier   	"encuentro"
+				quidu      	"5BF448AB008A"
+				messages   	(list Messages
+				    (object Message "generar encuentro"
+					quid       	"5BF448AB0083"
+					frequency  	"Aperiodic"
+					synchronization 	"Return"
+					dir        	"FromClientToSupplier"
+					sequence   	"4.1.1.1"
+					ordinal    	23
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			persistence 	"Transient"
 			creationObj 	TRUE
 			multi      	FALSE)
 		    (object Object "encuentro"
-			quid       	"5BF365DF01D1"
+			quid       	"5BF448AB008A"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5BF38AA10182"
+				quid       	"5BF448AB0089"
 				supplier   	"$UNNAMED$1"
-				quidu      	"5BF35EF0005E"
+				quidu      	"5BF448AB002F"
 				messages   	(list Messages
 				    (object Message "obtener encuentro"
-					quid       	"5BF38AA10183"
+					quid       	"5BF448AB0088"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"8.1.1.1.1"
-					ordinal    	28
-					quidu      	"000000000000"
-					creation   	FALSE))))
-			persistence 	"Transient"
-			creationObj 	FALSE
-			multi      	FALSE)
-		    (object Object "tipo_encuentro"
-			quid       	"5BF365E401A9"
-			collaborators 	(list link_list
-			    (object Link
-				quid       	"5BF389EB0332"
-				supplier   	"encuentro"
-				quidu      	"5BF365DF01D1"
-				messages   	(list Messages
-				    (object Message "generar encuentro"
-					quid       	"5BF389EB0333"
-					frequency  	"Aperiodic"
-					synchronization 	"Return"
-					dir        	"FromClientToSupplier"
-					sequence   	"8.1.1.1"
-					ordinal    	27
+					sequence   	"4.1.1.1.1"
+					ordinal    	24
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			persistence 	"Transient"
 			creationObj 	TRUE
-			multi      	FALSE)
-		    (object Object "juego"
-			quid       	"5BF365E90374"
-			persistence 	"Transient"
-			creationObj 	TRUE
-			multi      	FALSE)
-		    (object Object "cuota_ranking"
-			quid       	"5BF3661B00EA"
-			collaborators 	(list link_list
-			    (object Link
-				quid       	"5BF3807F007E"
-				supplier   	"cuota"
-				quidu      	"5BF3662B0259"
-				messages   	(list Messages
-				    (object Message "buscar cuotas validas"
-					quid       	"5BF3807F007F"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"7.1.1"
-					ordinal    	20
-					quidu      	"000000000000"
-					creation   	FALSE))))
-			persistence 	"Transient"
-			creationObj 	FALSE
-			multi      	FALSE)
-		    (object Object "cuota"
-			quid       	"5BF3662B0259"
-			collaborators 	(list link_list
-			    (object Link
-				quid       	"5BF382010303"
-				supplier   	"cuota"
-				quidu      	"5BF3662B0259")
-			    (object Link
-				quid       	"5BF382A200AE"
-				supplier   	"aportacion"
-				quidu      	"5BF3647802A2")
-			    (object Link
-				quid       	"5BF383A7010D"
-				supplier   	"$UNNAMED$1"
-				quidu      	"5BF35EF0005E"
-				messages   	(list Messages
-				    (object Message "encontro cuotas del ranking"
-					quid       	"5BF383A7010E"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"7.1.1.1"
-					ordinal    	21
-					quidu      	"000000000000"
-					creation   	FALSE))))
-			persistence 	"Transient"
-			creationObj 	FALSE
 			multi      	FALSE)
 		    (object Object "resultado"
-			quid       	"5BF3667B00DD"
+			quid       	"5BF448AB0097"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5BF393FD00AD"
+				quid       	"5BF448AB0098"
 				supplier   	"transaccion"
-				quidu      	"5BF3668502C3"
+				quidu      	"5BF448AB009F"
 				messages   	(list Messages
 				    (object Message "realizar transacciones"
-					quid       	"5BF393FD00AE"
+					quid       	"5BF448AB0099"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"10.1.1.1.1"
-					ordinal    	34
+					sequence   	"6.1.1.1.1"
+					ordinal    	30
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			persistence 	"Transient"
-			creationObj 	FALSE
+			creationObj 	TRUE
 			multi      	FALSE)
 		    (object Object "transaccion"
-			quid       	"5BF3668502C3"
+			quid       	"5BF448AB009F"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5BF394140156"
+				quid       	"5BF448AB009E"
 				supplier   	"historial_creditos"
-				quidu      	"5BF366C102FD"
+				quidu      	"5BF448AB00A2"
 				messages   	(list Messages
 				    (object Message "registrar en historial creditos"
-					quid       	"5BF394140157"
+					quid       	"5BF448AB009D"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"10.1.1.1.1.1"
-					ordinal    	36
-					quidu      	"000000000000"
-					creation   	FALSE))))
-			persistence 	"Transient"
-			creationObj 	TRUE
-			multi      	FALSE)
-		    (object Object "ahorro_categorias"
-			quid       	"5BF366A001C2"
-			collaborators 	(list link_list
-			    (object Link
-				quid       	"5BF38BEA01B2"
-				supplier   	"ahorro"
-				quidu      	"5BF366AA01F9"
-				messages   	(list Messages
-				    (object Message "obtener ahorros"
-					quid       	"5BF38BEA01B3"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"4.1.1"
-					ordinal    	13
-					quidu      	"000000000000"
-					creation   	FALSE))))
-			persistence 	"Transient"
-			creationObj 	TRUE
-			multi      	FALSE)
-		    (object Object "ahorro"
-			quid       	"5BF366AA01F9"
-			collaborators 	(list link_list
-			    (object Link
-				quid       	"5BF38C3801E1"
-				supplier   	"$UNNAMED$1"
-				quidu      	"5BF35EF0005E"
-				messages   	(list Messages
-				    (object Message "ahorros encontrados"
-					quid       	"5BF38C3801E2"
-					frequency  	"Aperiodic"
-					synchronization 	"Simple"
-					dir        	"FromClientToSupplier"
-					sequence   	"4.1.1.1"
-					ordinal    	14
+					sequence   	"6.1.1.1.1.1"
+					ordinal    	32
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			persistence 	"Transient"
 			creationObj 	TRUE
 			multi      	FALSE)
 		    (object Object "historial_creditos"
-			quid       	"5BF366C102FD"
+			quid       	"5BF448AB00A2"
 			collaborators 	(list link_list
 			    (object Link
-				quid       	"5BF3944100A6"
+				quid       	"5BF448AB00A3"
 				supplier   	"$UNNAMED$1"
-				quidu      	"5BF35EF0005E"
+				quidu      	"5BF448AB002F"
 				messages   	(list Messages
 				    (object Message "obtener saldo actual"
-					quid       	"5BF3944100A7"
+					quid       	"5BF448AB00A4"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
 					dir        	"FromClientToSupplier"
-					sequence   	"11"
-					ordinal    	38
+					sequence   	"7"
+					ordinal    	34
 					quidu      	"000000000000"
 					creation   	FALSE))))
 			persistence 	"Transient"
 			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "participante"
+			quid       	"5BF44CC903A5"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"5BF44D5A0183"
+				supplier   	"participante"
+				quidu      	"5BF44CC903A5"))
+			persistence 	"Transient"
+			creationObj 	FALSE
 			multi      	FALSE))))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Main"
-		quid       	"5BF358EB00D7"
+		quid       	"5BF4473B0380"
 		title      	"Main"
 		zoom       	100
 		max_height 	28350
 		max_width  	21600
 		origin_x   	0
-		origin_y   	418
-		items      	(list diagram_item_list
-		    (object ClassView "Class" "Use Case View::NewClass" @2
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(220, 315)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@2
-			    location   	(220, 475)
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	325
-			    justify    	0
-			    label      	"NewClass")
-			icon       	"Actor"
-			icon_style 	"Icon"
-			line_color 	3342489
-			quidu      	"5BF35D970276"
-			annotation 	8
-			autoResize 	TRUE)))
-	    (object InteractionDiagram "NewDiagram"
+		origin_y   	0
+		items      	(list diagram_item_list))
+	    (object InteractionDiagram "NewDiagram2"
 		mechanism_ref 	@1
-		quid       	"5BF3595E0374"
-		title      	"NewDiagram"
-		zoom       	80
+		quid       	"5BF447900199"
+		title      	"NewDiagram2"
+		zoom       	100
 		max_height 	28350
 		max_width  	21600
-		origin_x   	4246
-		origin_y   	5239
+		origin_x   	16
+		origin_y   	1384
 		items      	(list diagram_item_list
-		    (object InterObjView "Usuario" @3
+		    (object InterObjView "Usuario" @2
 			location   	(293, 305)
 			font       	(object Font
 			    size       	10
@@ -733,67 +631,53 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@3
-			    location   	(293, 330)
+			    Parent_View 	@2
+			    location   	(293, 305)
+			    fill_color 	16777215
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	360
+			    max_width  	102
 			    justify    	0
 			    label      	"Usuario")
-			icon       	"Actor"
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF35E280304"
+			quidu      	"5BF448AB000F"
 			width      	120
-			height     	5943
+			height     	5484
 			icon_height 	162
 			icon_width 	120
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @4
+			Focus_Of_Control 	(object Focus_Of_Control "" @3
 			    location   	(293, 385)
 			    line_color 	3342489
-			    InterObjView 	@3
+			    InterObjView 	@2
 			    height     	137
 			    y_coord    	47
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @5
-			    location   	(293, 1127)
+			Focus_Of_Control 	(object Focus_Of_Control "" @4
+			    location   	(293, 1123)
 			    line_color 	3342489
-			    InterObjView 	@3
+			    InterObjView 	@2
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @5
+			    location   	(293, 3050)
+			    line_color 	3342489
+			    InterObjView 	@2
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @6
-			    location   	(293, 1547)
+			    location   	(293, 3996)
 			    line_color 	3342489
-			    InterObjView 	@3
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @7
-			    location   	(293, 2318)
-			    line_color 	3342489
-			    InterObjView 	@3
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @8
-			    location   	(293, 4047)
-			    line_color 	3342489
-			    InterObjView 	@3
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @9
-			    location   	(293, 4993)
-			    line_color 	3342489
-			    InterObjView 	@3
+			    InterObjView 	@2
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "$UNNAMED$0" @10
+		    (object InterObjView "$UNNAMED$0" @7
 			location   	(763, 225)
 			font       	(object Font
 			    size       	10
@@ -805,7 +689,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@10
+			    Parent_View 	@7
 			    location   	(763, 225)
 			    fill_color 	13434879
 			    anchor_loc 	1
@@ -816,119 +700,98 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF3599A0306"
+			quidu      	"5BF448AB0022"
 			width      	300
-			height     	6023
+			height     	5564
 			icon_height 	162
 			icon_width 	120
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @11
+			Focus_Of_Control 	(object Focus_Of_Control "" @8
 			    location   	(763, 432)
 			    line_color 	3342489
-			    InterObjView 	@10
+			    InterObjView 	@7
 			    height     	195
 			    y_coord    	105
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @12
+			Focus_Of_Control 	(object Focus_Of_Control "" @9
 			    location   	(763, 877)
 			    line_color 	3342489
-			    InterObjView 	@10
+			    InterObjView 	@7
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @10
+			    location   	(763, 1123)
+			    line_color 	3342489
+			    InterObjView 	@7
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @11
+			    location   	(763, 2221)
+			    line_color 	3342489
+			    InterObjView 	@7
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @12
+			    location   	(763, 2641)
+			    line_color 	3342489
+			    InterObjView 	@7
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @13
-			    location   	(763, 1127)
+			    location   	(763, 2945)
 			    line_color 	3342489
-			    InterObjView 	@10
-			    height     	195
-			    y_coord    	105
+			    InterObjView 	@7
+			    height     	165
+			    y_coord    	75
 			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @14
-			    location   	(763, 1547)
+			    location   	(763, 3050)
 			    line_color 	3342489
-			    InterObjView 	@10
+			    InterObjView 	@7
 			    height     	90
 			    y_coord    	0
-			    Nested     	FALSE)
+			    Nested     	TRUE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @15
-			    location   	(763, 1667)
+			    location   	(763, 3680)
 			    line_color 	3342489
-			    InterObjView 	@10
+			    InterObjView 	@7
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @16
-			    location   	(763, 2087)
+			    location   	(763, 3996)
 			    line_color 	3342489
-			    InterObjView 	@10
-			    height     	90
-			    y_coord    	0
+			    InterObjView 	@7
+			    height     	1135
+			    y_coord    	1045
 			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @17
-			    location   	(763, 2318)
+			    location   	(763, 4861)
 			    line_color 	3342489
-			    InterObjView 	@10
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @18
-			    location   	(763, 2471)
-			    line_color 	3342489
-			    InterObjView 	@10
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @19
-			    location   	(763, 3641)
-			    line_color 	3342489
-			    InterObjView 	@10
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @20
-			    location   	(763, 3942)
-			    line_color 	3342489
-			    InterObjView 	@10
-			    height     	165
-			    y_coord    	75
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @21
-			    location   	(763, 4047)
-			    line_color 	3342489
-			    InterObjView 	@10
+			    InterObjView 	@7
 			    height     	90
 			    y_coord    	0
 			    Nested     	TRUE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @22
-			    location   	(763, 4677)
+			Focus_Of_Control 	(object Focus_Of_Control "" @18
+			    location   	(763, 5071)
 			    line_color 	3342489
-			    InterObjView 	@10
+			    InterObjView 	@7
 			    height     	90
 			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @23
-			    location   	(763, 4993)
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @19
+			    location   	(763, 5315)
 			    line_color 	3342489
-			    InterObjView 	@10
+			    InterObjView 	@7
 			    height     	195
 			    y_coord    	105
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @24
-			    location   	(763, 5858)
-			    line_color 	3342489
-			    InterObjView 	@10
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @25
-			    location   	(763, 6068)
-			    line_color 	3342489
-			    InterObjView 	@10
-			    height     	90
-			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "$UNNAMED$1" @26
+		    (object InterObjView "$UNNAMED$1" @20
 			location   	(1220, 226)
 			font       	(object Font
 			    size       	10
@@ -940,7 +803,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@26
+			    Parent_View 	@20
 			    location   	(1220, 226)
 			    fill_color 	13434879
 			    anchor_loc 	1
@@ -951,133 +814,147 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF35EF0005E"
+			quidu      	"5BF448AB002F"
 			width      	300
-			height     	6022
+			height     	5563
 			icon_height 	162
 			icon_width 	120
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @27
+			Focus_Of_Control 	(object Focus_Of_Control "" @21
 			    location   	(1220, 306)
 			    line_color 	3342489
-			    InterObjView 	@26
+			    InterObjView 	@20
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @28
+			Focus_Of_Control 	(object Focus_Of_Control "" @22
 			    location   	(1220, 537)
 			    line_color 	3342489
-			    InterObjView 	@26
+			    InterObjView 	@20
 			    height     	195
 			    y_coord    	105
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @29
+			Focus_Of_Control 	(object Focus_Of_Control "" @23
 			    location   	(1220, 667)
 			    line_color 	3342489
-			    InterObjView 	@26
+			    InterObjView 	@20
 			    height     	375
 			    y_coord    	285
 			    Nested     	TRUE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @30
+			Focus_Of_Control 	(object Focus_Of_Control "" @24
 			    location   	(1220, 982)
 			    line_color 	3342489
-			    InterObjView 	@26
+			    InterObjView 	@20
 			    height     	90
 			    y_coord    	0
 			    Nested     	TRUE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @31
-			    location   	(1220, 1232)
+			Focus_Of_Control 	(object Focus_Of_Control "" @25
+			    location   	(1220, 1228)
 			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	270
-			    y_coord    	180
+			    InterObjView 	@20
+			    height     	820
+			    y_coord    	730
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @26
+			    location   	(1220, 1438)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	195
+			    y_coord    	105
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @27
+			    location   	(1220, 1778)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @28
+			    location   	(1220, 1988)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @29
+			    location   	(1220, 2221)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @30
+			    location   	(1220, 2536)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @31
+			    location   	(1220, 2945)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	1216
+			    y_coord    	1126
 			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @32
-			    location   	(1220, 1442)
+			    location   	(1220, 3470)
 			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	90
-			    y_coord    	0
+			    InterObjView 	@20
+			    height     	300
+			    y_coord    	210
 			    Nested     	TRUE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @33
-			    location   	(1220, 1667)
+			    location   	(1220, 4101)
 			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	195
-			    y_coord    	105
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @34
-			    location   	(1220, 1982)
-			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	195
-			    y_coord    	105
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @35
-			    location   	(1220, 2471)
-			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @36
-			    location   	(1220, 2591)
-			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @37
-			    location   	(1220, 3116)
-			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	615
-			    y_coord    	525
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @38
-			    location   	(1220, 3942)
-			    line_color 	3342489
-			    InterObjView 	@26
+			    InterObjView 	@20
 			    height     	300
 			    y_coord    	210
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @34
+			    location   	(1220, 4336)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	375
+			    y_coord    	285
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @35
+			    location   	(1220, 4651)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	375
+			    y_coord    	285
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @36
+			    location   	(1220, 4966)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	309
+			    y_coord    	219
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @37
+			    location   	(1220, 5210)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	195
+			    y_coord    	105
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @38
+			    location   	(1220, 5420)
+			    line_color 	3342489
+			    InterObjView 	@20
+			    height     	254
+			    y_coord    	164
 			    Nested     	FALSE)
 			Focus_Of_Control 	(object Focus_Of_Control "" @39
-			    location   	(1220, 4467)
+			    location   	(1220, 5609)
 			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	300
-			    y_coord    	210
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @40
-			    location   	(1220, 5098)
-			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	300
-			    y_coord    	210
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @41
-			    location   	(1220, 5333)
-			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	375
-			    y_coord    	285
-			    Nested     	TRUE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @42
-			    location   	(1220, 5648)
-			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	375
-			    y_coord    	285
-			    Nested     	TRUE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @43
-			    location   	(1220, 5963)
-			    line_color 	3342489
-			    InterObjView 	@26
-			    height     	195
-			    y_coord    	105
+			    InterObjView 	@20
+			    height     	90
+			    y_coord    	0
 			    Nested     	TRUE))
-		    (object InterObjView "$UNNAMED$2" @44
+		    (object InterObjView "$UNNAMED$2" @40
 			location   	(1700, 233)
 			font       	(object Font
 			    size       	10
@@ -1089,7 +966,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@44
+			    Parent_View 	@40
 			    location   	(1700, 233)
 			    fill_color 	13434879
 			    anchor_loc 	1
@@ -1100,29 +977,103 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF3644D013E"
+			quidu      	"5BF448AB00BD"
 			width      	300
-			height     	6015
+			height     	5556
 			icon_height 	162
 			icon_width 	120
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @45
+			Focus_Of_Control 	(object Focus_Of_Control "" @41
 			    location   	(1700, 313)
 			    line_color 	3342489
-			    InterObjView 	@44
+			    InterObjView 	@40
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @46
+			Focus_Of_Control 	(object Focus_Of_Control "" @42
 			    location   	(1700, 772)
 			    line_color 	3342489
-			    InterObjView 	@44
+			    InterObjView 	@40
 			    height     	300
 			    y_coord    	210
 			    Nested     	FALSE))
-		    (object InterObjView "ranking_usuario" @47
-			location   	(3140, 235)
+		    (object InterObjView "evento" @43
+			location   	(2141, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@43
+			    location   	(2141, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"evento")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5BF448AB0071"
+			width      	300
+			height     	5564
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @44
+			    location   	(2141, 1333)
+			    line_color 	3342489
+			    InterObjView 	@43
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE))
+		    (object InterObjView "participante" @45
+			location   	(2519, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@45
+			    location   	(2519, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"participante")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5BF44CC903A5"
+			width      	300
+			height     	5564
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @46
+			    location   	(2519, 1543)
+			    line_color 	3342489
+			    InterObjView 	@45
+			    height     	325
+			    y_coord    	235
+			    Nested     	FALSE))
+		    (object InterObjView "ahorro_categorias" @47
+			location   	(2913, 225)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1134,39 +1085,32 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@47
-			    location   	(3140, 235)
+			    location   	(2913, 225)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	282
 			    justify    	0
-			    label      	"ranking_usuario")
+			    label      	"ahorro_categorias")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF3659E00B0"
+			quidu      	"5BF448AB00AE"
 			width      	300
-			height     	6013
+			height     	5564
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @48
-			    location   	(3140, 315)
+			    location   	(2913, 2326)
 			    line_color 	3342489
 			    InterObjView 	@47
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @49
-			    location   	(3140, 2591)
-			    line_color 	3342489
-			    InterObjView 	@47
-			    height     	300
-			    y_coord    	210
+			    height     	195
+			    y_coord    	105
 			    Nested     	FALSE))
-		    (object InterObjView "cuota_ranking" @50
-			location   	(3500, 225)
+		    (object InterObjView "ahorro" @49
+			location   	(3352, 237)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1177,33 +1121,40 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@50
-			    location   	(3500, 225)
+			    Parent_View 	@49
+			    location   	(3352, 237)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	282
 			    justify    	0
-			    label      	"cuota_ranking")
+			    label      	"ahorro")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF3661B00EA"
+			quidu      	"5BF448AB00B3"
 			width      	300
-			height     	6023
+			height     	5552
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @51
-			    location   	(3500, 2801)
+			Focus_Of_Control 	(object Focus_Of_Control "" @50
+			    location   	(3352, 317)
 			    line_color 	3342489
-			    InterObjView 	@50
-			    height     	300
-			    y_coord    	210
+			    InterObjView 	@49
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @51
+			    location   	(3352, 2431)
+			    line_color 	3342489
+			    InterObjView 	@49
+			    height     	195
+			    y_coord    	105
 			    Nested     	FALSE))
-		    (object InterObjView "cuota" @52
-			location   	(3961, 225)
+		    (object InterObjView "juego" @52
+			location   	(3873, 228)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1215,81 +1166,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@52
-			    location   	(3961, 225)
-			    fill_color 	13434879
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	282
-			    justify    	0
-			    label      	"cuota")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5BF3662B0259"
-			width      	300
-			height     	6023
-			icon_height 	0
-			icon_width 	0
-			icon_y_offset 	0
-			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @53
-			    location   	(3961, 3011)
-			    line_color 	3342489
-			    InterObjView 	@52
-			    height     	195
-			    y_coord    	105
-			    Nested     	FALSE))
-		    (object InterObjView "aportacion" @54
-			location   	(4410, 225)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	TRUE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@54
-			    location   	(4410, 225)
-			    fill_color 	13434879
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	282
-			    justify    	0
-			    label      	"aportacion")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5BF3647802A2"
-			width      	300
-			height     	6023
-			icon_height 	0
-			icon_width 	0
-			icon_y_offset 	0
-			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @55
-			    location   	(4410, 4152)
-			    line_color 	3342489
-			    InterObjView 	@54
-			    height     	195
-			    y_coord    	105
-			    Nested     	FALSE))
-		    (object InterObjView "juego" @56
-			location   	(2060, 261)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	TRUE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@56
-			    location   	(2060, 261)
+			    location   	(3873, 228)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -1299,29 +1176,29 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF365E90374"
+			quidu      	"5BF448AB0064"
 			width      	300
-			height     	5987
+			height     	5561
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @57
-			    location   	(2060, 341)
+			Focus_Of_Control 	(object Focus_Of_Control "" @53
+			    location   	(3873, 308)
 			    line_color 	3342489
-			    InterObjView 	@56
+			    InterObjView 	@52
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @58
-			    location   	(2060, 1337)
+			Focus_Of_Control 	(object Focus_Of_Control "" @54
+			    location   	(3873, 1883)
 			    line_color 	3342489
-			    InterObjView 	@56
+			    InterObjView 	@52
 			    height     	195
 			    y_coord    	105
 			    Nested     	FALSE))
-		    (object InterObjView "tipo_encuentro" @59
-			location   	(4808, 240)
+		    (object InterObjView "aportacion" @55
+			location   	(4328, 231)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1332,8 +1209,52 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@59
-			    location   	(4808, 240)
+			    Parent_View 	@55
+			    location   	(4328, 231)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"aportacion")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5BF448AB0080"
+			width      	300
+			height     	5558
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @56
+			    location   	(4328, 311)
+			    line_color 	3342489
+			    InterObjView 	@55
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @57
+			    location   	(4328, 3155)
+			    line_color 	3342489
+			    InterObjView 	@55
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE))
+		    (object InterObjView "tipo_encuentro" @58
+			location   	(4828, 234)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@58
+			    location   	(4828, 234)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -1343,29 +1264,29 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF365E401A9"
+			quidu      	"5BF448AB0085"
 			width      	300
-			height     	6008
+			height     	5555
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @60
-			    location   	(4808, 320)
+			Focus_Of_Control 	(object Focus_Of_Control "" @59
+			    location   	(4828, 314)
 			    line_color 	3342489
-			    InterObjView 	@59
+			    InterObjView 	@58
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @61
-			    location   	(4808, 4257)
+			Focus_Of_Control 	(object Focus_Of_Control "" @60
+			    location   	(4828, 3260)
 			    line_color 	3342489
-			    InterObjView 	@59
+			    InterObjView 	@58
 			    height     	195
 			    y_coord    	105
 			    Nested     	FALSE))
-		    (object InterObjView "encuentro" @62
-			location   	(5209, 225)
+		    (object InterObjView "encuentro" @61
+			location   	(5300, 228)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1376,8 +1297,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@62
-			    location   	(5209, 225)
+			    Parent_View 	@61
+			    location   	(5300, 228)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -1387,22 +1308,29 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF365DF01D1"
+			quidu      	"5BF448AB008A"
 			width      	300
-			height     	6023
+			height     	5561
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @63
-			    location   	(5209, 4362)
+			Focus_Of_Control 	(object Focus_Of_Control "" @62
+			    location   	(5300, 308)
 			    line_color 	3342489
-			    InterObjView 	@62
+			    InterObjView 	@61
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @63
+			    location   	(5300, 3365)
+			    line_color 	3342489
+			    InterObjView 	@61
 			    height     	195
 			    y_coord    	105
 			    Nested     	FALSE))
 		    (object InterObjView "resultado" @64
-			location   	(5569, 225)
+			location   	(5798, 237)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1414,7 +1342,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@64
-			    location   	(5569, 225)
+			    location   	(5798, 237)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -1424,22 +1352,29 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF3667B00DD"
+			quidu      	"5BF448AB0097"
 			width      	300
-			height     	6023
+			height     	5552
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
 			Focus_Of_Control 	(object Focus_Of_Control "" @65
-			    location   	(5569, 5438)
+			    location   	(5798, 317)
+			    line_color 	3342489
+			    InterObjView 	@64
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @66
+			    location   	(5798, 4441)
 			    line_color 	3342489
 			    InterObjView 	@64
 			    height     	300
 			    y_coord    	210
 			    Nested     	FALSE))
-		    (object InterObjView "ahorro_categorias" @66
-			location   	(2420, 263)
+		    (object InterObjView "transaccion" @67
+			location   	(6301, 245)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1450,96 +1385,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@66
-			    location   	(2420, 263)
-			    fill_color 	13434879
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	282
-			    justify    	0
-			    label      	"ahorro_categorias")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5BF366A001C2"
-			width      	300
-			height     	5985
-			icon_height 	0
-			icon_width 	0
-			icon_y_offset 	0
-			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @67
-			    location   	(2420, 343)
-			    line_color 	3342489
-			    InterObjView 	@66
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @68
-			    location   	(2420, 1772)
-			    line_color 	3342489
-			    InterObjView 	@66
-			    height     	195
-			    y_coord    	105
-			    Nested     	FALSE))
-		    (object InterObjView "ahorro" @69
-			location   	(2780, 240)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	TRUE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@69
-			    location   	(2780, 240)
-			    fill_color 	13434879
-			    anchor_loc 	1
-			    nlines     	2
-			    max_width  	282
-			    justify    	0
-			    label      	"ahorro")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5BF366AA01F9"
-			width      	300
-			height     	6008
-			icon_height 	0
-			icon_width 	0
-			icon_y_offset 	0
-			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @70
-			    location   	(2780, 320)
-			    line_color 	3342489
-			    InterObjView 	@69
-			    height     	90
-			    y_coord    	0
-			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @71
-			    location   	(2780, 1877)
-			    line_color 	3342489
-			    InterObjView 	@69
-			    height     	195
-			    y_coord    	105
-			    Nested     	FALSE))
-		    (object InterObjView "transaccion" @72
-			location   	(6002, 239)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	TRUE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@72
-			    location   	(6002, 239)
+			    Parent_View 	@67
+			    location   	(6301, 245)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -1549,29 +1396,29 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF3668502C3"
+			quidu      	"5BF448AB009F"
 			width      	300
-			height     	6009
+			height     	5544
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @73
-			    location   	(6002, 319)
+			Focus_Of_Control 	(object Focus_Of_Control "" @68
+			    location   	(6301, 325)
 			    line_color 	3342489
-			    InterObjView 	@72
+			    InterObjView 	@67
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @74
-			    location   	(6002, 5543)
+			Focus_Of_Control 	(object Focus_Of_Control "" @69
+			    location   	(6301, 4546)
 			    line_color 	3342489
-			    InterObjView 	@72
+			    InterObjView 	@67
 			    height     	300
 			    y_coord    	210
 			    Nested     	FALSE))
-		    (object InterObjView "historial_creditos" @75
-			location   	(6391, 242)
+		    (object InterObjView "historial_creditos" @70
+			location   	(6757, 229)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1582,8 +1429,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@75
-			    location   	(6391, 242)
+			    Parent_View 	@70
+			    location   	(6757, 229)
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
@@ -1593,35 +1440,35 @@
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
-			quidu      	"5BF366C102FD"
+			quidu      	"5BF448AB00A2"
 			width      	300
-			height     	6006
+			height     	5560
 			icon_height 	0
 			icon_width 	0
 			icon_y_offset 	0
 			annotation 	1
-			Focus_Of_Control 	(object Focus_Of_Control "" @76
-			    location   	(6391, 322)
+			Focus_Of_Control 	(object Focus_Of_Control "" @71
+			    location   	(6757, 309)
 			    line_color 	3342489
-			    InterObjView 	@75
+			    InterObjView 	@70
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @77
-			    location   	(6391, 5753)
+			Focus_Of_Control 	(object Focus_Of_Control "" @72
+			    location   	(6757, 4756)
 			    line_color 	3342489
-			    InterObjView 	@75
+			    InterObjView 	@70
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE)
-			Focus_Of_Control 	(object Focus_Of_Control "" @78
-			    location   	(6391, 5963)
+			Focus_Of_Control 	(object Focus_Of_Control "" @73
+			    location   	(6757, 4966)
 			    line_color 	3342489
-			    InterObjView 	@75
+			    InterObjView 	@70
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterMessView "iniciar sesion" @79
+		    (object InterMessView "iniciar sesion" @74
 			location   	(0, 432)
 			font       	(object Font
 			    size       	10
@@ -1632,8 +1479,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @80
-			    Parent_View 	@79
+			label      	(object SegLabel @75
+			    Parent_View 	@74
 			    location   	(527, 388)
 			    font       	(object Font
 				size       	10
@@ -1644,7 +1491,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF3673003A2"
+			    quidu      	"5BF448AB0011"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	296
@@ -1654,14 +1501,14 @@
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@3
-			supplier   	@10
-			Focus_Src  	@4
-			Focus_Entry 	@11
+			client     	@2
+			supplier   	@7
+			Focus_Src  	@3
+			Focus_Entry 	@8
 			origin     	(308, 432)
 			terminus   	(747, 432)
 			ordinal    	0)
-		    (object InterMessView "verificar usuario" @81
+		    (object InterMessView "verificar usuario" @76
 			location   	(0, 537)
 			font       	(object Font
 			    size       	10
@@ -1672,8 +1519,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @82
-			    Parent_View 	@81
+			label      	(object SegLabel @77
+			    Parent_View 	@76
 			    location   	(991, 493)
 			    font       	(object Font
 				size       	10
@@ -1684,7 +1531,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF367480365"
+			    quidu      	"5BF448AB0020"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	371
@@ -1694,14 +1541,14 @@
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@10
-			supplier   	@26
-			Focus_Src  	@11
-			Focus_Entry 	@28
+			client     	@7
+			supplier   	@20
+			Focus_Src  	@8
+			Focus_Entry 	@22
 			origin     	(778, 537)
 			terminus   	(1204, 537)
 			ordinal    	1)
-		    (object SelfMessView "validar usuario" @83
+		    (object SelfMessView "validar usuario" @78
 			location   	(0, 642)
 			font       	(object Font
 			    size       	10
@@ -1712,8 +1559,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @84
-			    Parent_View 	@83
+			label      	(object SegLabel @79
+			    Parent_View 	@78
 			    location   	(1311, 598)
 			    font       	(object Font
 				size       	10
@@ -1724,7 +1571,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF3675900AF"
+			    quidu      	"5BF448AB002D"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	349
@@ -1734,14 +1581,14 @@
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@26
-			supplier   	@26
-			Focus_Src  	@28
-			Focus_Entry 	@29
+			client     	@20
+			supplier   	@20
+			Focus_Src  	@22
+			Focus_Entry 	@23
 			origin     	(1236, 642)
 			terminus   	(1386, 642)
 			ordinal    	2)
-		    (object InterMessView "ver tipo de usuario" @85
+		    (object InterMessView "ver tipo de usuario" @80
 			location   	(0, 772)
 			font       	(object Font
 			    size       	10
@@ -1752,8 +1599,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @86
-			    Parent_View 	@85
+			label      	(object SegLabel @81
+			    Parent_View 	@80
 			    location   	(1459, 728)
 			    font       	(object Font
 				size       	10
@@ -1764,7 +1611,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF37A6E02A0"
+			    quidu      	"5BF448AB0031"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	423
@@ -1774,14 +1621,14 @@
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@26
-			supplier   	@44
-			Focus_Src  	@29
-			Focus_Entry 	@46
+			client     	@20
+			supplier   	@40
+			Focus_Src  	@23
+			Focus_Entry 	@42
 			origin     	(1235, 772)
 			terminus   	(1684, 772)
 			ordinal    	3)
-		    (object InterMessView "tipo de usuario encontrado" @87
+		    (object InterMessView "tipo de usuario encontrado" @82
 			location   	(0, 982)
 			font       	(object Font
 			    size       	10
@@ -1792,8 +1639,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @88
-			    Parent_View 	@87
+			label      	(object SegLabel @83
+			    Parent_View 	@82
 			    location   	(1460, 938)
 			    font       	(object Font
 				size       	10
@@ -1804,7 +1651,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF37A8200C8"
+			    quidu      	"5BF448AB0033"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	592
@@ -1814,14 +1661,14 @@
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@44
-			supplier   	@26
-			Focus_Src  	@46
-			Focus_Entry 	@30
+			client     	@40
+			supplier   	@20
+			Focus_Src  	@42
+			Focus_Entry 	@24
 			origin     	(1684, 982)
 			terminus   	(1236, 982)
 			ordinal    	5)
-		    (object InterMessView "muestra datos del usuario" @89
+		    (object InterMessView "muestra datos del usuario" @84
 			location   	(0, 877)
 			font       	(object Font
 			    size       	10
@@ -1832,8 +1679,8 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @90
-			    Parent_View 	@89
+			label      	(object SegLabel @85
+			    Parent_View 	@84
 			    location   	(992, 833)
 			    font       	(object Font
 				size       	10
@@ -1844,7 +1691,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF37CD20009"
+			    quidu      	"5BF448AB0036"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	516
@@ -1854,15 +1701,15 @@
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@26
-			supplier   	@10
-			Focus_Src  	@29
-			Focus_Entry 	@12
+			client     	@20
+			supplier   	@7
+			Focus_Src  	@23
+			Focus_Entry 	@9
 			origin     	(1204, 877)
 			terminus   	(779, 877)
 			ordinal    	4)
-		    (object InterMessView "buscar encuentro" @91
-			location   	(0, 1127)
+		    (object InterMessView "buscar evento" @86
+			location   	(0, 1123)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1872,9 +1719,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @92
-			    Parent_View 	@91
-			    location   	(527, 1083)
+			label      	(object SegLabel @87
+			    Parent_View 	@86
+			    location   	(527, 1079)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1884,25 +1731,25 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF37CFF02C8"
+			    quidu      	"5BF448AB0013"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	370
+			    max_width  	284
 			    justify    	0
-			    label      	"buscar encuentro"
+			    label      	"buscar evento"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@3
-			supplier   	@10
-			Focus_Src  	@5
-			Focus_Entry 	@13
-			origin     	(308, 1127)
-			terminus   	(747, 1127)
+			client     	@2
+			supplier   	@7
+			Focus_Src  	@4
+			Focus_Entry 	@10
+			origin     	(308, 1123)
+			terminus   	(747, 1123)
 			ordinal    	6)
-		    (object InterMessView "peticion de juego" @93
-			location   	(0, 1232)
+		    (object InterMessView "peticion de evento" @88
+			location   	(0, 1228)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1912,9 +1759,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @94
-			    Parent_View 	@93
-			    location   	(991, 1188)
+			label      	(object SegLabel @89
+			    Parent_View 	@88
+			    location   	(991, 1184)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1924,25 +1771,25 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF3804701F6"
+			    quidu      	"5BF448AB0038"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	377
+			    max_width  	359
 			    justify    	0
-			    label      	"peticion de juego"
+			    label      	"peticion de evento"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@10
-			supplier   	@26
-			Focus_Src  	@13
-			Focus_Entry 	@31
-			origin     	(778, 1232)
-			terminus   	(1204, 1232)
+			client     	@7
+			supplier   	@20
+			Focus_Src  	@10
+			Focus_Entry 	@25
+			origin     	(778, 1228)
+			terminus   	(1204, 1228)
 			ordinal    	7)
-		    (object InterMessView "buscar ranking jugador" @95
-			location   	(0, 2591)
+		    (object InterMessView "buscar juego" @90
+			location   	(0, 1883)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1952,9 +1799,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @96
-			    Parent_View 	@95
-			    location   	(2179, 2636)
+			label      	(object SegLabel @91
+			    Parent_View 	@90
+			    location   	(2540, 1840)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1964,305 +1811,25 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF3805E0007"
+			    quidu      	"5BF448AB004B"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	492
-			    justify    	0
-			    label      	"buscar ranking jugador"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	1)
-			line_color 	3342489
-			client     	@26
-			supplier   	@47
-			Focus_Src  	@36
-			Focus_Entry 	@49
-			origin     	(1235, 2591)
-			terminus   	(3124, 2591)
-			ordinal    	18)
-		    (object InterMessView "buscar cuotas del ranking" @97
-			location   	(0, 2801)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @98
-			    Parent_View 	@97
-			    location   	(3319, 2757)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF3806F015F"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	541
-			    justify    	0
-			    label      	"buscar cuotas del ranking"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	0)
-			line_color 	3342489
-			client     	@47
-			supplier   	@50
-			Focus_Src  	@49
-			Focus_Entry 	@51
-			origin     	(3155, 2801)
-			terminus   	(3484, 2801)
-			ordinal    	19)
-		    (object InterMessView "buscar cuotas validas" @99
-			location   	(0, 3011)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @100
-			    Parent_View 	@99
-			    location   	(3740, 2968)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF3807F007F"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	457
-			    justify    	0
-			    label      	"buscar cuotas validas"
-			    pctDist    	0.523256
-			    height     	44
-			    orientation 	0)
-			line_color 	3342489
-			client     	@50
-			supplier   	@52
-			Focus_Src  	@51
-			Focus_Entry 	@53
-			origin     	(3515, 3011)
-			terminus   	(3945, 3011)
-			ordinal    	20)
-		    (object InterMessView "encontro cuotas del ranking" @101
-			location   	(0, 3116)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @102
-			    Parent_View 	@101
-			    location   	(2591, 3072)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF383A7010E"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	580
-			    justify    	0
-			    label      	"encontro cuotas del ranking"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	1)
-			line_color 	3342489
-			client     	@52
-			supplier   	@26
-			Focus_Src  	@53
-			Focus_Entry 	@37
-			origin     	(3945, 3116)
-			terminus   	(1236, 3116)
-			ordinal    	21)
-		    (object InterMessView "mostrar cuotas" @103
-			location   	(0, 3641)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @104
-			    Parent_View 	@103
-			    location   	(992, 3597)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF383BF030C"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	332
-			    justify    	0
-			    label      	"mostrar cuotas"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	1)
-			line_color 	3342489
-			client     	@26
-			supplier   	@10
-			Focus_Src  	@37
-			Focus_Entry 	@19
-			origin     	(1204, 3641)
-			terminus   	(779, 3641)
-			ordinal    	22)
-		    (object InterMessView "seleccionar cuota" @105
-			location   	(0, 3942)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @106
-			    Parent_View 	@105
-			    location   	(991, 3987)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF383F7004C"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	402
-			    justify    	0
-			    label      	"seleccionar cuota"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	1)
-			line_color 	3342489
-			client     	@10
-			supplier   	@26
-			Focus_Src  	@20
-			Focus_Entry 	@38
-			origin     	(778, 3942)
-			terminus   	(1204, 3942)
-			ordinal    	23)
-		    (object InterMessView "aportacion del jugador" @107
-			location   	(0, 4152)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @108
-			    Parent_View 	@107
-			    location   	(2814, 4108)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF3857E0205"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	494
-			    justify    	0
-			    label      	"aportacion del jugador"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	0)
-			line_color 	3342489
-			client     	@26
-			supplier   	@54
-			Focus_Src  	@38
-			Focus_Entry 	@55
-			origin     	(1235, 4152)
-			terminus   	(4394, 4152)
-			ordinal    	25)
-		    (object InterMessView "buscar juego" @109
-			location   	(0, 1337)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @110
-			    Parent_View 	@109
-			    location   	(1637, 1294)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF3862C03E5"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	281
+			    max_width  	288
 			    justify    	0
 			    label      	"buscar juego"
 			    pctDist    	0.497890
 			    height     	44
 			    orientation 	0)
 			line_color 	3342489
-			client     	@26
-			supplier   	@56
-			Focus_Src  	@31
-			Focus_Entry 	@58
-			origin     	(1235, 1337)
-			terminus   	(2044, 1337)
-			ordinal    	8)
-		    (object InterMessView "juego encontrado" @111
-			location   	(0, 1442)
+			client     	@20
+			supplier   	@52
+			Focus_Src  	@25
+			Focus_Entry 	@54
+			origin     	(1235, 1883)
+			terminus   	(3857, 1883)
+			ordinal    	12)
+		    (object InterMessView "juego encontrado" @92
+			location   	(0, 1988)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2272,9 +1839,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @112
-			    Parent_View 	@111
-			    location   	(1640, 1398)
+			label      	(object SegLabel @93
+			    Parent_View 	@92
+			    location   	(2547, 1944)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2284,7 +1851,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF38655020C"
+			    quidu      	"5BF448AB004D"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	401
@@ -2294,15 +1861,15 @@
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@56
-			supplier   	@26
-			Focus_Src  	@58
-			Focus_Entry 	@32
-			origin     	(2044, 1442)
-			terminus   	(1236, 1442)
-			ordinal    	9)
-		    (object InterMessView "obtener tipo encuentro" @113
-			location   	(0, 4257)
+			client     	@52
+			supplier   	@20
+			Focus_Src  	@54
+			Focus_Entry 	@28
+			origin     	(3857, 1988)
+			terminus   	(1236, 1988)
+			ordinal    	13)
+		    (object InterMessView "seleccionar cuota" @94
+			location   	(0, 2945)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2312,9 +1879,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @114
-			    Parent_View 	@113
-			    location   	(4608, 4213)
+			label      	(object SegLabel @95
+			    Parent_View 	@94
+			    location   	(991, 2901)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2324,7 +1891,87 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF3866C01F4"
+			    quidu      	"5BF448AB0023"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	402
+			    justify    	0
+			    label      	"seleccionar cuota"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@7
+			supplier   	@20
+			Focus_Src  	@13
+			Focus_Entry 	@31
+			origin     	(778, 2945)
+			terminus   	(1204, 2945)
+			ordinal    	19)
+		    (object InterMessView "aportacion del jugador" @96
+			location   	(0, 3155)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @97
+			    Parent_View 	@96
+			    location   	(2773, 3111)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF448AB0048"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	494
+			    justify    	0
+			    label      	"aportacion del jugador"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@20
+			supplier   	@55
+			Focus_Src  	@31
+			Focus_Entry 	@57
+			origin     	(1235, 3155)
+			terminus   	(4312, 3155)
+			ordinal    	21)
+		    (object InterMessView "obtener tipo encuentro" @98
+			location   	(0, 3260)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @99
+			    Parent_View 	@98
+			    location   	(4577, 3216)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF448AB007E"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	494
@@ -2334,15 +1981,15 @@
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@54
-			supplier   	@59
-			Focus_Src  	@55
-			Focus_Entry 	@61
-			origin     	(4425, 4257)
-			terminus   	(4792, 4257)
-			ordinal    	26)
-		    (object InterMessView "generar encuentro" @115
-			location   	(0, 4362)
+			client     	@55
+			supplier   	@58
+			Focus_Src  	@57
+			Focus_Entry 	@60
+			origin     	(4343, 3260)
+			terminus   	(4812, 3260)
+			ordinal    	22)
+		    (object InterMessView "generar encuentro" @100
+			location   	(0, 3365)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2352,9 +1999,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @116
-			    Parent_View 	@115
-			    location   	(5008, 4318)
+			label      	(object SegLabel @101
+			    Parent_View 	@100
+			    location   	(5063, 3321)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2364,7 +2011,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF389EB0333"
+			    quidu      	"5BF448AB0083"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	412
@@ -2374,15 +2021,15 @@
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@59
-			supplier   	@62
-			Focus_Src  	@61
+			client     	@58
+			supplier   	@61
+			Focus_Src  	@60
 			Focus_Entry 	@63
-			origin     	(4823, 4362)
-			terminus   	(5193, 4362)
-			ordinal    	27)
-		    (object InterMessView "obtener encuentro" @117
-			location   	(0, 4467)
+			origin     	(4843, 3365)
+			terminus   	(5284, 3365)
+			ordinal    	23)
+		    (object InterMessView "obtener encuentro" @102
+			location   	(0, 3470)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2392,9 +2039,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @118
-			    Parent_View 	@117
-			    location   	(3215, 4423)
+			label      	(object SegLabel @103
+			    Parent_View 	@102
+			    location   	(3260, 3426)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2404,7 +2051,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF38AA10183"
+			    quidu      	"5BF448AB0088"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	412
@@ -2414,15 +2061,15 @@
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@62
-			supplier   	@26
+			client     	@61
+			supplier   	@20
 			Focus_Src  	@63
-			Focus_Entry 	@39
-			origin     	(5193, 4467)
-			terminus   	(1236, 4467)
-			ordinal    	28)
-		    (object InterMessView "mostrar encuentro" @119
-			location   	(0, 4677)
+			Focus_Entry 	@32
+			origin     	(5284, 3470)
+			terminus   	(1236, 3470)
+			ordinal    	24)
+		    (object InterMessView "mostrar encuentro" @104
+			location   	(0, 3680)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2432,9 +2079,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @120
-			    Parent_View 	@119
-			    location   	(992, 4633)
+			label      	(object SegLabel @105
+			    Parent_View 	@104
+			    location   	(992, 3636)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2444,7 +2091,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF38AB10152"
+			    quidu      	"5BF448AB003C"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	408
@@ -2454,15 +2101,15 @@
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@26
-			supplier   	@10
-			Focus_Src  	@39
-			Focus_Entry 	@22
-			origin     	(1204, 4677)
-			terminus   	(779, 4677)
-			ordinal    	29)
-		    (object InterMessView "jugar" @121
-			location   	(0, 4993)
+			client     	@20
+			supplier   	@7
+			Focus_Src  	@32
+			Focus_Entry 	@15
+			origin     	(1204, 3680)
+			terminus   	(779, 3680)
+			ordinal    	25)
+		    (object InterMessView "jugar" @106
+			location   	(0, 3996)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2472,9 +2119,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @122
-			    Parent_View 	@121
-			    location   	(529, 4953)
+			label      	(object SegLabel @107
+			    Parent_View 	@106
+			    location   	(529, 3956)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2484,7 +2131,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF38AEB02B9"
+			    quidu      	"5BF448AB0015"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	176
@@ -2494,15 +2141,15 @@
 			    height     	41
 			    orientation 	0)
 			line_color 	3342489
-			client     	@3
-			supplier   	@10
-			Focus_Src  	@9
-			Focus_Entry 	@23
-			origin     	(308, 4993)
-			terminus   	(747, 4993)
-			ordinal    	30)
-		    (object InterMessView "obtener puntuacion" @123
-			location   	(0, 5098)
+			client     	@2
+			supplier   	@7
+			Focus_Src  	@6
+			Focus_Entry 	@16
+			origin     	(308, 3996)
+			terminus   	(747, 3996)
+			ordinal    	26)
+		    (object InterMessView "obtener puntuacion" @108
+			location   	(0, 4101)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2512,9 +2159,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @124
-			    Parent_View 	@123
-			    location   	(991, 5143)
+			label      	(object SegLabel @109
+			    Parent_View 	@108
+			    location   	(991, 4057)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2524,7 +2171,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF38AFC0071"
+			    quidu      	"5BF448AB0025"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	436
@@ -2532,17 +2179,17 @@
 			    label      	"obtener puntuacion"
 			    pctDist    	0.500000
 			    height     	45
-			    orientation 	1)
+			    orientation 	0)
 			line_color 	3342489
-			client     	@10
-			supplier   	@26
-			Focus_Src  	@23
-			Focus_Entry 	@40
-			origin     	(778, 5098)
-			terminus   	(1204, 5098)
-			ordinal    	31)
-		    (object SelfMessView "verificar puntuacion" @125
-			location   	(0, 5308)
+			client     	@7
+			supplier   	@20
+			Focus_Src  	@16
+			Focus_Entry 	@33
+			origin     	(778, 4101)
+			terminus   	(1204, 4101)
+			ordinal    	27)
+		    (object SelfMessView "verificar puntuacion" @110
+			location   	(0, 4311)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2552,9 +2199,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @126
-			    Parent_View 	@125
-			    location   	(1311, 5264)
+			label      	(object SegLabel @111
+			    Parent_View 	@110
+			    location   	(1311, 4267)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2564,7 +2211,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF38B0C0297"
+			    quidu      	"5BF448AB0057"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	444
@@ -2574,15 +2221,15 @@
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@26
-			supplier   	@26
-			Focus_Src  	@40
-			Focus_Entry 	@41
-			origin     	(1236, 5308)
-			terminus   	(1386, 5308)
-			ordinal    	32)
-		    (object InterMessView "comparar resultado" @127
-			location   	(0, 5438)
+			client     	@20
+			supplier   	@20
+			Focus_Src  	@33
+			Focus_Entry 	@34
+			origin     	(1236, 4311)
+			terminus   	(1386, 4311)
+			ordinal    	28)
+		    (object InterMessView "comparar resultado" @112
+			location   	(0, 4441)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2592,9 +2239,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @128
-			    Parent_View 	@127
-			    location   	(3394, 5394)
+			label      	(object SegLabel @113
+			    Parent_View 	@112
+			    location   	(3508, 4397)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2604,7 +2251,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF38B1B0253"
+			    quidu      	"5BF448AB0050"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	432
@@ -2614,255 +2261,15 @@
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@26
+			client     	@20
 			supplier   	@64
-			Focus_Src  	@41
-			Focus_Entry 	@65
-			origin     	(1235, 5438)
-			terminus   	(5553, 5438)
-			ordinal    	33)
-		    (object InterMessView "buscar ahorros" @129
-			location   	(0, 1667)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @130
-			    Parent_View 	@129
-			    location   	(991, 1623)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF38BB801F9"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	344
-			    justify    	0
-			    label      	"buscar ahorros"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	0)
-			line_color 	3342489
-			client     	@10
-			supplier   	@26
-			Focus_Src  	@15
-			Focus_Entry 	@33
-			origin     	(778, 1667)
-			terminus   	(1204, 1667)
-			ordinal    	11)
-		    (object InterMessView "obtener categoria del ahorro" @131
-			location   	(0, 1772)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @132
-			    Parent_View 	@131
-			    location   	(1819, 1728)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF38BD80193"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	600
-			    justify    	0
-			    label      	"obtener categoria del ahorro"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	0)
-			line_color 	3342489
-			client     	@26
-			supplier   	@66
-			Focus_Src  	@33
-			Focus_Entry 	@68
-			origin     	(1235, 1772)
-			terminus   	(2404, 1772)
-			ordinal    	12)
-		    (object InterMessView "obtener ahorros" @133
-			location   	(0, 1877)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @134
-			    Parent_View 	@133
-			    location   	(2599, 1833)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF38BEA01B3"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	362
-			    justify    	0
-			    label      	"obtener ahorros"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	0)
-			line_color 	3342489
-			client     	@66
-			supplier   	@69
-			Focus_Src  	@68
-			Focus_Entry 	@71
-			origin     	(2435, 1877)
-			terminus   	(2764, 1877)
-			ordinal    	13)
-		    (object InterMessView "ver ahorros" @135
-			location   	(0, 1547)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @136
-			    Parent_View 	@135
-			    location   	(527, 1503)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF38C1E0361"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	278
-			    justify    	0
-			    label      	"ver ahorros"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	0)
-			line_color 	3342489
-			client     	@3
-			supplier   	@10
-			Focus_Src  	@6
-			Focus_Entry 	@14
-			origin     	(308, 1547)
-			terminus   	(747, 1547)
-			ordinal    	10)
-		    (object InterMessView "ahorros encontrados" @137
-			location   	(0, 1982)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @138
-			    Parent_View 	@137
-			    location   	(2004, 1938)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF38C3801E2"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	434
-			    justify    	0
-			    label      	"ahorros encontrados"
-			    pctDist    	0.497916
-			    height     	45
-			    orientation 	1)
-			line_color 	3342489
-			client     	@69
-			supplier   	@26
-			Focus_Src  	@71
-			Focus_Entry 	@34
-			origin     	(2764, 1982)
-			terminus   	(1236, 1982)
-			ordinal    	14)
-		    (object InterMessView "mostrar ahorros" @139
-			location   	(0, 2087)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @140
-			    Parent_View 	@139
-			    location   	(992, 2043)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF38C440221"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	358
-			    justify    	0
-			    label      	"mostrar ahorros"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	1)
-			line_color 	3342489
-			client     	@26
-			supplier   	@10
 			Focus_Src  	@34
-			Focus_Entry 	@16
-			origin     	(1204, 2087)
-			terminus   	(779, 2087)
-			ordinal    	15)
-		    (object InterMessView "buscar cuotas" @141
-			location   	(0, 2471)
+			Focus_Entry 	@66
+			origin     	(1235, 4441)
+			terminus   	(5782, 4441)
+			ordinal    	29)
+		    (object InterMessView "obtener ganador" @114
+			location   	(0, 4651)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -2872,9 +2279,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @142
-			    Parent_View 	@141
-			    location   	(991, 2516)
+			label      	(object SegLabel @115
+			    Parent_View 	@114
+			    location   	(3525, 4608)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -2884,127 +2291,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF38C8A0239"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	328
-			    justify    	0
-			    label      	"buscar cuotas"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	1)
-			line_color 	3342489
-			client     	@10
-			supplier   	@26
-			Focus_Src  	@18
-			Focus_Entry 	@35
-			origin     	(778, 2471)
-			terminus   	(1204, 2471)
-			ordinal    	17)
-		    (object InterMessView "ver aportaciones" @143
-			location   	(0, 2318)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @144
-			    Parent_View 	@143
-			    location   	(527, 2274)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF38CC50111"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	382
-			    justify    	0
-			    label      	"ver aportaciones"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	0)
-			line_color 	3342489
-			client     	@3
-			supplier   	@10
-			Focus_Src  	@7
-			Focus_Entry 	@17
-			origin     	(308, 2318)
-			terminus   	(747, 2318)
-			ordinal    	16)
-		    (object InterMessView "aportacion seleccionada" @145
-			location   	(0, 4047)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @146
-			    Parent_View 	@145
-			    location   	(527, 4003)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF38CE500D9"
-			    anchor_loc 	1
-			    nlines     	1
-			    max_width  	528
-			    justify    	0
-			    label      	"aportacion seleccionada"
-			    pctDist    	0.500000
-			    height     	45
-			    orientation 	0)
-			line_color 	3342489
-			client     	@3
-			supplier   	@10
-			Focus_Src  	@8
-			Focus_Entry 	@21
-			origin     	(308, 4047)
-			terminus   	(747, 4047)
-			ordinal    	24)
-		    (object InterMessView "obtener ganador" @147
-			location   	(0, 5648)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object SegLabel @148
-			    Parent_View 	@147
-			    location   	(3410, 5692)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    quidu      	"5BF3930B03E6"
+			    quidu      	"5BF448AB0052"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	371
@@ -3012,17 +2299,17 @@
 			    label      	"obtener ganador"
 			    pctDist    	0.496641
 			    height     	44
-			    orientation 	0)
+			    orientation 	1)
 			line_color 	3342489
 			client     	@64
-			supplier   	@26
-			Focus_Src  	@65
-			Focus_Entry 	@42
-			origin     	(5553, 5648)
-			terminus   	(1236, 5648)
-			ordinal    	35)
-		    (object InterMessView "mostrar resultado" @149
-			location   	(0, 5858)
+			supplier   	@20
+			Focus_Src  	@66
+			Focus_Entry 	@35
+			origin     	(5782, 4651)
+			terminus   	(1236, 4651)
+			ordinal    	31)
+		    (object InterMessView "mostrar resultado" @116
+			location   	(0, 4861)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3032,9 +2319,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @150
-			    Parent_View 	@149
-			    location   	(992, 5814)
+			label      	(object SegLabel @117
+			    Parent_View 	@116
+			    location   	(992, 4817)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3044,7 +2331,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF3939E0006"
+			    quidu      	"5BF448AB0040"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	393
@@ -3054,15 +2341,15 @@
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@26
-			supplier   	@10
-			Focus_Src  	@42
-			Focus_Entry 	@24
-			origin     	(1204, 5858)
-			terminus   	(779, 5858)
-			ordinal    	37)
-		    (object InterMessView "realizar transacciones" @151
-			location   	(0, 5543)
+			client     	@20
+			supplier   	@7
+			Focus_Src  	@35
+			Focus_Entry 	@17
+			origin     	(1204, 4861)
+			terminus   	(779, 4861)
+			ordinal    	33)
+		    (object InterMessView "realizar transacciones" @118
+			location   	(0, 4546)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3072,9 +2359,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @152
-			    Parent_View 	@151
-			    location   	(5785, 5499)
+			label      	(object SegLabel @119
+			    Parent_View 	@118
+			    location   	(6049, 4502)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3084,7 +2371,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF393FD00AE"
+			    quidu      	"5BF448AB0099"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	475
@@ -3095,14 +2382,14 @@
 			    orientation 	0)
 			line_color 	3342489
 			client     	@64
-			supplier   	@72
-			Focus_Src  	@65
-			Focus_Entry 	@74
-			origin     	(5584, 5543)
-			terminus   	(5986, 5543)
-			ordinal    	34)
-		    (object InterMessView "registrar en historial creditos" @153
-			location   	(0, 5753)
+			supplier   	@67
+			Focus_Src  	@66
+			Focus_Entry 	@69
+			origin     	(5813, 4546)
+			terminus   	(6285, 4546)
+			ordinal    	30)
+		    (object InterMessView "registrar en historial creditos" @120
+			location   	(0, 4756)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3112,9 +2399,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @154
-			    Parent_View 	@153
-			    location   	(6196, 5709)
+			label      	(object SegLabel @121
+			    Parent_View 	@120
+			    location   	(6528, 4712)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3124,7 +2411,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF394140157"
+			    quidu      	"5BF448AB009D"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	592
@@ -3134,15 +2421,15 @@
 			    height     	45
 			    orientation 	0)
 			line_color 	3342489
-			client     	@72
-			supplier   	@75
-			Focus_Src  	@74
-			Focus_Entry 	@77
-			origin     	(6017, 5753)
-			terminus   	(6375, 5753)
-			ordinal    	36)
-		    (object InterMessView "obtener saldo actual" @155
-			location   	(0, 5963)
+			client     	@67
+			supplier   	@70
+			Focus_Src  	@69
+			Focus_Entry 	@72
+			origin     	(6316, 4756)
+			terminus   	(6741, 4756)
+			ordinal    	32)
+		    (object InterMessView "buscar ahorros" @122
+			location   	(0, 2221)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3152,9 +2439,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @156
-			    Parent_View 	@155
-			    location   	(3808, 5920)
+			label      	(object SegLabel @123
+			    Parent_View 	@122
+			    location   	(991, 2177)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3164,7 +2451,247 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF3944100A7"
+			    quidu      	"5BF448AB0027"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	344
+			    justify    	0
+			    label      	"buscar ahorros"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@7
+			supplier   	@20
+			Focus_Src  	@11
+			Focus_Entry 	@29
+			origin     	(778, 2221)
+			terminus   	(1204, 2221)
+			ordinal    	14)
+		    (object InterMessView "obtener categoria del ahorro" @124
+			location   	(0, 2326)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @125
+			    Parent_View 	@124
+			    location   	(2066, 2282)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF448AB0055"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	600
+			    justify    	0
+			    label      	"obtener categoria del ahorro"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@20
+			supplier   	@47
+			Focus_Src  	@29
+			Focus_Entry 	@48
+			origin     	(1235, 2326)
+			terminus   	(2897, 2326)
+			ordinal    	15)
+		    (object InterMessView "obtener ahorros" @126
+			location   	(0, 2431)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @127
+			    Parent_View 	@126
+			    location   	(3132, 2387)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF448AB00AC"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	362
+			    justify    	0
+			    label      	"obtener ahorros"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@47
+			supplier   	@49
+			Focus_Src  	@48
+			Focus_Entry 	@51
+			origin     	(2928, 2431)
+			terminus   	(3336, 2431)
+			ordinal    	16)
+		    (object InterMessView "ahorros encontrados" @128
+			location   	(0, 2536)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @129
+			    Parent_View 	@128
+			    location   	(2291, 2492)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF448AB00B1"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	434
+			    justify    	0
+			    label      	"ahorros encontrados"
+			    pctDist    	0.497916
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@49
+			supplier   	@20
+			Focus_Src  	@51
+			Focus_Entry 	@30
+			origin     	(3336, 2536)
+			terminus   	(1236, 2536)
+			ordinal    	17)
+		    (object InterMessView "mostrar ahorros" @130
+			location   	(0, 2641)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @131
+			    Parent_View 	@130
+			    location   	(992, 2597)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF448AB003E"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	358
+			    justify    	0
+			    label      	"mostrar ahorros"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@20
+			supplier   	@7
+			Focus_Src  	@30
+			Focus_Entry 	@12
+			origin     	(1204, 2641)
+			terminus   	(779, 2641)
+			ordinal    	18)
+		    (object InterMessView "aportacion seleccionada" @132
+			location   	(0, 3050)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @133
+			    Parent_View 	@132
+			    location   	(527, 3006)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF448AB001C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	528
+			    justify    	0
+			    label      	"aportacion seleccionada"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@2
+			supplier   	@7
+			Focus_Src  	@5
+			Focus_Entry 	@14
+			origin     	(308, 3050)
+			terminus   	(747, 3050)
+			ordinal    	20)
+		    (object InterMessView "obtener saldo actual" @134
+			location   	(0, 4966)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @135
+			    Parent_View 	@134
+			    location   	(3991, 4923)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF448AB00A4"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	451
@@ -3174,15 +2701,15 @@
 			    height     	44
 			    orientation 	1)
 			line_color 	3342489
-			client     	@75
-			supplier   	@26
-			Focus_Src  	@78
-			Focus_Entry 	@43
-			origin     	(6375, 5963)
-			terminus   	(1236, 5963)
-			ordinal    	38)
-		    (object InterMessView "mostrar saldo actual" @157
-			location   	(0, 6068)
+			client     	@70
+			supplier   	@20
+			Focus_Src  	@73
+			Focus_Entry 	@36
+			origin     	(6741, 4966)
+			terminus   	(1236, 4966)
+			ordinal    	34)
+		    (object InterMessView "mostrar saldo actual" @136
+			location   	(0, 5071)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -3192,9 +2719,9 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			label      	(object SegLabel @158
-			    Parent_View 	@157
-			    location   	(992, 6024)
+			label      	(object SegLabel @137
+			    Parent_View 	@136
+			    location   	(992, 5027)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -3204,7 +2731,7 @@
 				strike     	FALSE
 				color      	0
 				default_color 	TRUE)
-			    quidu      	"5BF3949D02C5"
+			    quidu      	"5BF448AB0042"
 			    anchor_loc 	1
 			    nlines     	1
 			    max_width  	448
@@ -3214,24 +2741,356 @@
 			    height     	45
 			    orientation 	1)
 			line_color 	3342489
-			client     	@26
-			supplier   	@10
-			Focus_Src  	@43
-			Focus_Entry 	@25
-			origin     	(1204, 6068)
-			terminus   	(779, 6068)
-			ordinal    	39)))))
+			client     	@20
+			supplier   	@7
+			Focus_Src  	@36
+			Focus_Entry 	@18
+			origin     	(1204, 5071)
+			terminus   	(779, 5071)
+			ordinal    	35)
+		    (object InterMessView "buscar evento" @138
+			location   	(0, 1333)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @139
+			    Parent_View 	@138
+			    location   	(1680, 1289)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF4499C0148"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	284
+			    justify    	0
+			    label      	"buscar evento"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@20
+			supplier   	@43
+			Focus_Src  	@25
+			Focus_Entry 	@44
+			origin     	(1235, 1333)
+			terminus   	(2125, 1333)
+			ordinal    	8)
+		    (object InterMessView "evento encontrado" @140
+			location   	(0, 1438)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @141
+			    Parent_View 	@140
+			    location   	(1681, 1394)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF449A30318"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	381
+			    justify    	0
+			    label      	"evento encontrado"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@43
+			supplier   	@20
+			Focus_Src  	@44
+			Focus_Entry 	@26
+			origin     	(2125, 1438)
+			terminus   	(1236, 1438)
+			ordinal    	9)
+		    (object SelfMessView "Revisar más encuentro disponibles del evento" @142
+			location   	(0, 5185)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @143
+			    Parent_View 	@142
+			    location   	(1311, 5141)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF44BAF0344"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	873
+			    justify    	0
+			    label      	"Revisar más encuentro disponibles del evento"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@20
+			supplier   	@20
+			Focus_Src  	@36
+			Focus_Entry 	@37
+			origin     	(1236, 5185)
+			terminus   	(1386, 5185)
+			ordinal    	36)
+		    (object InterMessView "Notificar siguiente encuentro" @144
+			location   	(0, 5315)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @145
+			    Parent_View 	@144
+			    location   	(992, 5271)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF44BD40079"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	559
+			    justify    	0
+			    label      	"Notificar siguiente encuentro"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@20
+			supplier   	@7
+			Focus_Src  	@37
+			Focus_Entry 	@19
+			origin     	(1204, 5315)
+			terminus   	(779, 5315)
+			ordinal    	37)
+		    (object InterMessView "Confirmación" @146
+			location   	(0, 5420)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @147
+			    Parent_View 	@146
+			    location   	(991, 5376)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF44BED0167"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	294
+			    justify    	0
+			    label      	"Confirmación"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@7
+			supplier   	@20
+			Focus_Src  	@19
+			Focus_Entry 	@38
+			origin     	(778, 5420)
+			terminus   	(1204, 5420)
+			ordinal    	38)
+		    (object SelfMessView "Paso 13" @148
+			location   	(0, 5584)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @149
+			    Parent_View 	@148
+			    location   	(1311, 5540)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF44C9403DF"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	213
+			    justify    	0
+			    label      	"Paso 13"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@20
+			supplier   	@20
+			Focus_Src  	@38
+			Focus_Entry 	@39
+			origin     	(1236, 5584)
+			terminus   	(1386, 5584)
+			ordinal    	39)
+		    (object InterMessView "Registrar usuario" @150
+			location   	(0, 1543)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @151
+			    Parent_View 	@150
+			    location   	(1869, 1499)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF44CEE017E"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	359
+			    justify    	0
+			    label      	"Registrar usuario"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@20
+			supplier   	@45
+			Focus_Src  	@26
+			Focus_Entry 	@46
+			origin     	(1235, 1543)
+			terminus   	(2503, 1543)
+			ordinal    	10)
+		    (object InterMessView "Usuario registrado" @152
+			location   	(0, 1778)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @153
+			    Parent_View 	@152
+			    location   	(1870, 1734)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5BF44D6C0350"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	381
+			    justify    	0
+			    label      	"Usuario registrado"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@45
+			supplier   	@20
+			Focus_Src  	@46
+			Focus_Entry 	@27
+			origin     	(2503, 1778)
+			terminus   	(1236, 1778)
+			ordinal    	11)))))
     root_category 	(object Class_Category "Logical View"
-	quid       	"5BF358C102A6"
+	quid       	"5BF4473A0255"
 	exportControl 	"Public"
 	global     	TRUE
 	subsystem  	"Component View"
-	quidu      	"5BF358C102A8"
-	logical_models 	(list unit_reference_list)
+	quidu      	"5BF4473A0257"
+	logical_models 	(list unit_reference_list
+	    (object Mechanism @154
+		logical_models 	(list unit_reference_list)))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
-		quid       	"5BF358EB00DD"
+		quid       	"5BF4473B0393"
 		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))
+	    (object InteractionDiagram "NewDiagram"
+		mechanism_ref 	@154
+		quid       	"5BF4477B009E"
+		title      	"NewDiagram"
 		zoom       	100
 		max_height 	28350
 		max_width  	21600
@@ -3239,11 +3098,11 @@
 		origin_y   	0
 		items      	(list diagram_item_list))))
     root_subsystem 	(object SubSystem "Component View"
-	quid       	"5BF358C102A8"
+	quid       	"5BF4473A0257"
 	physical_models 	(list unit_reference_list)
 	physical_presentations 	(list unit_reference_list
 	    (object Module_Diagram "Main"
-		quid       	"5BF358EB00D6"
+		quid       	"5BF4473B037F"
 		title      	"Main"
 		zoom       	100
 		max_height 	28350
@@ -3252,12 +3111,12 @@
 		origin_y   	0
 		items      	(list diagram_item_list)))
 	category   	"Logical View"
-	quidu      	"5BF358C102A6")
+	quidu      	"5BF4473A0255")
     process_structure 	(object Processes
-	quid       	"5BF358C102A9"
+	quid       	"5BF4473A0258"
 	ProcsNDevs 	(list
 	    (object Process_Diagram "Deployment View"
-		quid       	"5BF358C102AB"
+		quid       	"5BF4473A025A"
 		title      	"Deployment View"
 		zoom       	100
 		max_height 	28350
@@ -6934,4 +6793,4 @@
 		tool       	"XML_DTD"
 		name       	"HiddenTool"
 		value      	FALSE))
-	quid       	"5BF358C102AA"))
+	quid       	"5BF4473A0259"))
