@@ -253,7 +253,7 @@
 			quidu      	"5BF20A2A0022")
 		    (object Uses_Relationship
 			quid       	"5BF20B9C0200"
-			supplier   	"Logical View::Aportaciones"
+			supplier   	"Logical View::Aportacion"
 			quidu      	"5BF20A2A0055"
 			supplier_cardinality 	(value cardinality "1")
 			client_cardinality 	(value cardinality "1"))
@@ -287,7 +287,7 @@
 		    (object ClassAttribute "detalles"
 			quid       	"5BF20A2A006D"
 			type       	"string")))
-	    (object Class "Aportaciones"
+	    (object Class "Aportacion"
 		quid       	"5BF20A2A0055"
 		used_nodes 	(list uses_relationship_list
 		    (object Uses_Relationship
@@ -594,7 +594,7 @@
 			client_cardinality 	(value cardinality "1..*"))
 		    (object Uses_Relationship
 			quid       	"5BF20BB80228"
-			supplier   	"Logical View::Aportaciones"
+			supplier   	"Logical View::Aportacion"
 			quidu      	"5BF20A2A0055"
 			supplier_cardinality 	(value cardinality "1..*")
 			client_cardinality 	(value cardinality "1")))
@@ -701,7 +701,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$13"
 			quid       	"5BF20A2A005E"
-			supplier   	"Logical View::Aportaciones"
+			supplier   	"Logical View::Aportacion"
 			quidu      	"5BF20A2A0055"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$14"
@@ -718,7 +718,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$17"
 			quid       	"5BF20A2A0065"
-			supplier   	"Logical View::Aportaciones"
+			supplier   	"Logical View::Aportacion"
 			quidu      	"5BF20A2A0055")))
 	    (object Association "$UNNAMED$18"
 		quid       	"5BF20A2A00AF"
@@ -785,7 +785,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$34"
 			quid       	"5BF20A2A0051"
-			supplier   	"Logical View::Aportaciones"
+			supplier   	"Logical View::Aportacion"
 			quidu      	"5BF20A2A0055"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$35"
@@ -850,7 +850,7 @@
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$50"
 			quid       	"5BF20A2A0087"
-			supplier   	"Logical View::Aportaciones"
+			supplier   	"Logical View::Aportacion"
 			quidu      	"5BF20A2A0055")))
 	    (object Association "$UNNAMED$51"
 		quid       	"5BF20A2A008B"
@@ -1126,7 +1126,7 @@
 			height     	444
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Aportaciones" @6
+		    (object ClassView "Class" "Logical View::Aportacion" @6
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1147,7 +1147,7 @@
 			    nlines     	1
 			    max_width  	436
 			    justify    	0
-			    label      	"Aportaciones")
+			    label      	"Aportacion")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -1370,7 +1370,7 @@
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(2456, 980)
+			location   	(2451, 945)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1382,7 +1382,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@11
-			    location   	(2264, 824)
+			    location   	(2259, 789)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	384
@@ -1394,7 +1394,7 @@
 			quidu      	"5BF20A2A0090"
 			compartment 	(object Compartment
 			    Parent_View 	@11
-			    location   	(2264, 886)
+			    location   	(2259, 851)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1850,8 +1850,8 @@
 			client     	@10
 			supplier   	@11
 			vertices   	(list Points
-			    (1957, 546)
-			    (2263, 811))
+			    (1957, 537)
+			    (2249, 778))
 			line_style 	0)
 		    (object UsesView "" @29
 			font       	(object Font
@@ -1869,8 +1869,8 @@
 			client     	@14
 			supplier   	@11
 			vertices   	(list Points
-			    (2640, 1620)
-			    (2504, 1148))
+			    (2642, 1620)
+			    (2497, 1113))
 			line_style 	0)
 		    (object UsesView "" @30
 			font       	(object Font
@@ -1888,8 +1888,8 @@
 			client     	@9
 			supplier   	@11
 			vertices   	(list Points
-			    (3106, 1014)
-			    (2657, 989))
+			    (3106, 1003)
+			    (2652, 962))
 			line_style 	0)
 		    (object UsesView "" @31
 			font       	(object Font

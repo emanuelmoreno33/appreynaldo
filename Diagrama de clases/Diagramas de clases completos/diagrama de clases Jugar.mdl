@@ -551,6 +551,9 @@
 		    (object ClassAttribute "id_usuario"
 			quid       	"5BF20A2A004C"
 			type       	"int")
+		    (object ClassAttribute "numero_cuenta"
+			quid       	"5BF5082C0035"
+			type       	"int")
 		    (object ClassAttribute "id_tipo_usuario"
 			quid       	"5BF20A2A004D"
 			type       	"int")
@@ -648,6 +651,68 @@
 		    (object ClassAttribute "descripción"
 			quid       	"5BF20A2A00F6"
 			type       	"string")))
+	    (object Class "Transaccion_Post_Encuentro"
+		quid       	"5BF5080A0065"
+		used_nodes 	(list uses_relationship_list
+		    (object Uses_Relationship
+			quid       	"5BF5080A0066"
+			supplier   	"Logical View::Resultado"
+			quidu      	"5BF20A2A0068"
+			supplier_cardinality 	(value cardinality "1")
+			client_cardinality 	(value cardinality "1")))
+		operations 	(list Operations
+		    (object Operation "nueva_transaccion"
+			quid       	"5BF5080A0067"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "obtener_transaccion"
+			quid       	"5BF5080A0068"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "id_transaccion_post_encuentro"
+			quid       	"5BF5080A0069")
+		    (object ClassAttribute "id_resultado"
+			quid       	"5BF5080A006A"
+			type       	"int")
+		    (object ClassAttribute "fecha_hora"
+			quid       	"5BF5080A006B"
+			type       	"datetime")))
+	    (object Class "Transaccion_Pre_Encuentro"
+		quid       	"5BF5080A0083"
+		used_nodes 	(list uses_relationship_list
+		    (object Uses_Relationship
+			quid       	"5BF5080A0084"
+			supplier   	"Logical View::Aportacion"
+			quidu      	"5BF20A2A0055"
+			supplier_cardinality 	(value cardinality "1")
+			client_cardinality 	(value cardinality "1")))
+		operations 	(list Operations
+		    (object Operation "nueva_transaccion"
+			quid       	"5BF5080A0085"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0)
+		    (object Operation "obtener_transaccion"
+			quid       	"5BF5080A0086"
+			concurrency 	"Sequential"
+			opExportControl 	"Public"
+			uid        	0))
+		class_attributes 	(list class_attribute_list
+		    (object ClassAttribute "id_transaccion_pre_encuentro"
+			quid       	"5BF5080A0087"
+			type       	"int")
+		    (object ClassAttribute "id_aportacion"
+			quid       	"5BF5080A0088"
+			type       	"int")
+		    (object ClassAttribute "id_cuenta_empresa"
+			quid       	"5BF5080A0089"
+			type       	"int")
+		    (object ClassAttribute "fecha_hora"
+			quid       	"5BF5080A008A"
+			type       	"datetime")))
 	    (object Association "$UNNAMED$0"
 		quid       	"5BF20A2903E2"
 		roles      	(list role_list
@@ -875,7 +940,31 @@
 		    (object Role "$UNNAMED$56"
 			quid       	"5BF20A2A00EC"
 			supplier   	"Logical View::Encuentro"
-			quidu      	"5BF20A2A007A"))))
+			quidu      	"5BF20A2A007A")))
+	    (object Association "$UNNAMED$57"
+		quid       	"5BF5081A036B"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$58"
+			quid       	"5BF5081B0087"
+			supplier   	"Logical View::Transaccion"
+			quidu      	"5BF20A2A0022"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$59"
+			quid       	"5BF5081B0089"
+			supplier   	"Logical View::Transaccion_Post_Encuentro"
+			quidu      	"5BF5080A0065")))
+	    (object Association "$UNNAMED$60"
+		quid       	"5BF5081B03E3"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$61"
+			quid       	"5BF5081C025F"
+			supplier   	"Logical View::Encuentro"
+			quidu      	"5BF20A2A007A"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$62"
+			quid       	"5BF5081C0261"
+			supplier   	"Logical View::Transaccion_Pre_Encuentro"
+			quidu      	"5BF5080A0083"))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"5BF20A090388"
@@ -883,14 +972,14 @@
 		zoom       	80
 		max_height 	28350
 		max_width  	21600
-		origin_x   	0
-		origin_y   	0
+		origin_x   	59
+		origin_y   	2090
 		items      	(list diagram_item_list
 		    (object ClassView "Class" "Logical View::Ahorro_Categorias" @1
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(1082, 1187)
+			location   	(1117, 1047)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -902,7 +991,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@1
-			    location   	(888, 1031)
+			    location   	(923, 891)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	388
@@ -914,7 +1003,7 @@
 			quidu      	"5BF20A2903DC"
 			compartment 	(object Compartment
 			    Parent_View 	@1
-			    location   	(888, 1093)
+			    location   	(923, 953)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -934,11 +1023,11 @@
 			height     	336
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Transaccion" @2
+		    (object ClassView "Class" "Logical View::Ahorro" @2
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(371, 2250)
+			location   	(1146, 1772)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -950,55 +1039,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@2
-			    location   	(141, 2019)
-			    fill_color 	13434879
-			    nlines     	1
-			    max_width  	460
-			    justify    	0
-			    label      	"Transaccion")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5BF20A2A0022"
-			compartment 	(object Compartment
-			    Parent_View 	@2
-			    location   	(141, 2081)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    icon_style 	"Icon"
-			    fill_color 	13434879
-			    anchor     	2
-			    nlines     	8
-			    max_width  	526
-			    justify    	1)
-			width      	478
-			height     	486
-			annotation 	8
-			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Ahorro" @3
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(1119, 1877)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@3
-			    location   	(911, 1642)
+			    location   	(938, 1537)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	416
@@ -1009,8 +1050,8 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A0013"
 			compartment 	(object Compartment
-			    Parent_View 	@3
-			    location   	(911, 1704)
+			    Parent_View 	@2
+			    location   	(938, 1599)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1030,7 +1071,7 @@
 			height     	494
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Historial_Creditos" @4
+		    (object ClassView "Class" "Logical View::Historial_Creditos" @3
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1045,7 +1086,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@4
+			    Parent_View 	@3
 			    location   	(123, 1027)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1057,7 +1098,7 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A0036"
 			compartment 	(object Compartment
-			    Parent_View 	@4
+			    Parent_View 	@3
 			    location   	(123, 1089)
 			    font       	(object Font
 				size       	10
@@ -1078,11 +1119,11 @@
 			height     	546
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Resultado" @5
+		    (object ClassView "Class" "Logical View::Resultado" @4
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(1986, 2240)
+			location   	(2444, 2623)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1093,8 +1134,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@5
-			    location   	(1781, 2030)
+			    Parent_View 	@4
+			    location   	(2239, 2413)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	410
@@ -1105,8 +1146,8 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A0068"
 			compartment 	(object Compartment
-			    Parent_View 	@5
-			    location   	(1781, 2092)
+			    Parent_View 	@4
+			    location   	(2239, 2475)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1126,7 +1167,7 @@
 			height     	444
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Aportacion" @6
+		    (object ClassView "Class" "Logical View::Aportacion" @5
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1141,7 +1182,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@6
+			    Parent_View 	@5
 			    location   	(1700, 1175)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1153,7 +1194,7 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A0055"
 			compartment 	(object Compartment
-			    Parent_View 	@6
+			    Parent_View 	@5
 			    location   	(1700, 1237)
 			    font       	(object Font
 				size       	10
@@ -1174,7 +1215,7 @@
 			height     	494
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Cuota" @7
+		    (object ClassView "Class" "Logical View::Cuota" @6
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1189,7 +1230,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@7
+			    Parent_View 	@6
 			    location   	(3168, 69)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1201,7 +1242,7 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A00A9"
 			compartment 	(object Compartment
-			    Parent_View 	@7
+			    Parent_View 	@6
 			    location   	(3168, 131)
 			    font       	(object Font
 				size       	10
@@ -1222,7 +1263,7 @@
 			height     	342
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Cuota_Ranking" @8
+		    (object ClassView "Class" "Logical View::Cuota_Ranking" @7
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1237,7 +1278,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@8
+			    Parent_View 	@7
 			    location   	(2335, 185)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1249,7 +1290,7 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A00B4"
 			compartment 	(object Compartment
-			    Parent_View 	@8
+			    Parent_View 	@7
 			    location   	(2335, 247)
 			    font       	(object Font
 				size       	10
@@ -1270,7 +1311,7 @@
 			height     	342
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Ranking_Categorias" @9
+		    (object ClassView "Class" "Logical View::Ranking_Categorias" @8
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1285,7 +1326,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@9
+			    Parent_View 	@8
 			    location   	(3116, 821)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1297,7 +1338,7 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A009C"
 			compartment 	(object Compartment
-			    Parent_View 	@9
+			    Parent_View 	@8
 			    location   	(3116, 883)
 			    font       	(object Font
 				size       	10
@@ -1318,7 +1359,7 @@
 			height     	444
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Ranking_Usuario" @10
+		    (object ClassView "Class" "Logical View::Ranking_Usuario" @9
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1333,7 +1374,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@10
+			    Parent_View 	@9
 			    location   	(1564, 110)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1345,7 +1386,7 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A00C0"
 			compartment 	(object Compartment
-			    Parent_View 	@10
+			    Parent_View 	@9
 			    location   	(1564, 172)
 			    font       	(object Font
 				size       	10
@@ -1366,7 +1407,7 @@
 			height     	546
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Juego" @11
+		    (object ClassView "Class" "Logical View::Juego" @10
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1381,7 +1422,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@11
+			    Parent_View 	@10
 			    location   	(2259, 789)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1393,7 +1434,7 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A0090"
 			compartment 	(object Compartment
-			    Parent_View 	@11
+			    Parent_View 	@10
 			    location   	(2259, 851)
 			    font       	(object Font
 				size       	10
@@ -1414,7 +1455,7 @@
 			height     	336
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Usuario" @12
+		    (object ClassView "Class" "Logical View::Usuario" @11
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1429,11 +1470,11 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@12
-			    location   	(880, 180)
+			    Parent_View 	@11
+			    location   	(878, 155)
 			    fill_color 	13434879
 			    nlines     	1
-			    max_width  	420
+			    max_width  	424
 			    justify    	0
 			    label      	"Usuario")
 			icon_style 	"Icon"
@@ -1441,8 +1482,8 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A0044"
 			compartment 	(object Compartment
-			    Parent_View 	@12
-			    location   	(880, 242)
+			    Parent_View 	@11
+			    location   	(878, 217)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1455,14 +1496,14 @@
 			    icon_style 	"Icon"
 			    fill_color 	13434879
 			    anchor     	2
-			    nlines     	9
-			    max_width  	419
+			    nlines     	10
+			    max_width  	422
 			    justify    	1)
-			width      	438
-			height     	546
+			width      	442
+			height     	596
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Tipo_Usuario" @13
+		    (object ClassView "Class" "Logical View::Tipo_Usuario" @12
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1477,7 +1518,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@13
+			    Parent_View 	@12
 			    location   	(102, 88)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1489,7 +1530,7 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A0148"
 			compartment 	(object Compartment
-			    Parent_View 	@13
+			    Parent_View 	@12
 			    location   	(102, 150)
 			    font       	(object Font
 				size       	10
@@ -1510,11 +1551,11 @@
 			height     	336
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Encuentro" @14
+		    (object ClassView "Class" "Logical View::Tipo_Encuentro" @13
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(2721, 1894)
+			location   	(4110, 1386)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1525,56 +1566,8 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@14
-			    location   	(2485, 1633)
-			    fill_color 	13434879
-			    nlines     	1
-			    max_width  	472
-			    justify    	0
-			    label      	"Encuentro")
-			icon_style 	"Icon"
-			line_color 	3342489
-			fill_color 	13434879
-			quidu      	"5BF20A2A007A"
-			compartment 	(object Compartment
-			    Parent_View 	@14
-			    location   	(2485, 1695)
-			    font       	(object Font
-				size       	10
-				face       	"Arial"
-				bold       	FALSE
-				italics    	FALSE
-				underline  	FALSE
-				strike     	FALSE
-				color      	0
-				default_color 	TRUE)
-			    icon_style 	"Icon"
-			    fill_color 	13434879
-			    anchor     	2
-			    nlines     	9
-			    max_width  	470
-			    justify    	1)
-			width      	490
-			height     	546
-			annotation 	8
-			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Tipo_Encuentro" @15
-			ShowCompartmentStereotypes 	TRUE
-			IncludeAttribute 	TRUE
-			IncludeOperation 	TRUE
-			location   	(3513, 1797)
-			font       	(object Font
-			    size       	10
-			    face       	"Arial"
-			    bold       	FALSE
-			    italics    	FALSE
-			    underline  	FALSE
-			    strike     	FALSE
-			    color      	0
-			    default_color 	TRUE)
-			label      	(object ItemLabel
-			    Parent_View 	@15
-			    location   	(3272, 1641)
+			    Parent_View 	@13
+			    location   	(3869, 1230)
 			    fill_color 	13434879
 			    nlines     	1
 			    max_width  	482
@@ -1585,8 +1578,8 @@
 			fill_color 	13434879
 			quidu      	"5BF20A2A00F2"
 			compartment 	(object Compartment
-			    Parent_View 	@15
-			    location   	(3272, 1703)
+			    Parent_View 	@13
+			    location   	(3869, 1292)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -1606,7 +1599,7 @@
 			height     	336
 			annotation 	8
 			autoResize 	TRUE)
-		    (object UsesView "" @16
+		    (object UsesView "" @14
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1619,11 +1612,49 @@
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5BF20A2A0046"
-			client     	@12
-			supplier   	@13
+			client     	@11
+			supplier   	@12
 			vertices   	(list Points
-			    (870, 383)
+			    (868, 382)
 			    (549, 302))
+			line_style 	0)
+		    (object UsesView "" @15
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5BF20B6C00C1"
+			client     	@3
+			supplier   	@11
+			vertices   	(list Points
+			    (613, 1014)
+			    (868, 706))
+			line_style 	0)
+		    (object UsesView "" @16
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5BF20B6D0086"
+			client     	@9
+			supplier   	@11
+			vertices   	(list Points
+			    (1554, 391)
+			    (1311, 416))
 			line_style 	0)
 		    (object UsesView "" @17
 			font       	(object Font
@@ -1637,12 +1668,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20B6C00C1"
-			client     	@4
-			supplier   	@12
+			quidu      	"5BF20B6E02C4"
+			client     	@5
+			supplier   	@11
 			vertices   	(list Points
-			    (613, 1014)
-			    (870, 704))
+			    (1706, 1162)
+			    (1311, 700))
 			line_style 	0)
 		    (object UsesView "" @18
 			font       	(object Font
@@ -1656,12 +1687,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20B6D0086"
-			client     	@10
-			supplier   	@12
+			quidu      	"5BF20B9303A6"
+			client     	@2
+			supplier   	@1
 			vertices   	(list Points
-			    (1554, 391)
-			    (1309, 416))
+			    (1135, 1524)
+			    (1123, 1215))
 			line_style 	0)
 		    (object UsesView "" @19
 			font       	(object Font
@@ -1675,12 +1706,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20B6E02C4"
-			client     	@6
-			supplier   	@12
+			quidu      	"5BF20B9C0200"
+			client     	@4
+			supplier   	@5
 			vertices   	(list Points
-			    (1706, 1162)
-			    (1309, 698))
+			    (2347, 2400)
+			    (2024, 1657))
 			line_style 	0)
 		    (object UsesView "" @20
 			font       	(object Font
@@ -1694,12 +1725,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20B880288"
-			client     	@4
+			quidu      	"5BF20B9E01A8"
+			client     	@5
 			supplier   	@2
 			vertices   	(list Points
-			    (382, 1561)
-			    (375, 2006))
+			    (1690, 1514)
+			    (1363, 1669))
 			line_style 	0)
 		    (object UsesView "" @21
 			font       	(object Font
@@ -1713,12 +1744,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20B7B0342"
-			client     	@2
-			supplier   	@3
+			quidu      	"5BF20BBD0270"
+			client     	@9
+			supplier   	@10
 			vertices   	(list Points
-			    (610, 2128)
-			    (901, 1984))
+			    (1957, 537)
+			    (2249, 778))
 			line_style 	0)
 		    (object UsesView "" @22
 			font       	(object Font
@@ -1732,12 +1763,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20B8C0059"
-			client     	@2
-			supplier   	@5
+			quidu      	"5BF20BC3004E"
+			client     	@8
+			supplier   	@10
 			vertices   	(list Points
-			    (610, 2247)
-			    (1771, 2241))
+			    (3106, 1003)
+			    (2652, 962))
 			line_style 	0)
 		    (object UsesView "" @23
 			font       	(object Font
@@ -1751,12 +1782,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20B9303A6"
-			client     	@3
-			supplier   	@1
+			quidu      	"5BF20BC60004"
+			client     	@6
+			supplier   	@8
 			vertices   	(list Points
-			    (1104, 1629)
-			    (1090, 1355))
+			    (3428, 399)
+			    (3408, 808))
 			line_style 	0)
 		    (object UsesView "" @24
 			font       	(object Font
@@ -1770,12 +1801,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20B9C0200"
-			client     	@5
+			quidu      	"5BF20BC701E5"
+			client     	@7
 			supplier   	@6
 			vertices   	(list Points
-			    (1966, 2017)
-			    (1938, 1657))
+			    (2844, 308)
+			    (3158, 264))
 			line_style 	0)
 		    (object UsesView "" @25
 			font       	(object Font
@@ -1789,14 +1820,18 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20B9E01A8"
-			client     	@6
-			supplier   	@3
+			quidu      	"5BF20BC8014E"
+			client     	@7
+			supplier   	@9
 			vertices   	(list Points
-			    (1690, 1540)
-			    (1336, 1748))
+			    (2325, 351)
+			    (1957, 364))
 			line_style 	0)
-		    (object UsesView "" @26
+		    (object ClassView "Class" "Logical View::Transaccion_Post_Encuentro" @26
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1422, 2315)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1806,16 +1841,45 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			stereotype 	TRUE
+			label      	(object ItemLabel
+			    Parent_View 	@26
+			    location   	(1111, 2131)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	622
+			    justify    	0
+			    label      	"Transaccion_Post_Encuentro")
+			icon_style 	"Icon"
 			line_color 	3342489
-			quidu      	"5BF20BB80228"
-			client     	@14
-			supplier   	@6
-			vertices   	(list Points
-			    (2475, 1745)
-			    (2145, 1546))
-			line_style 	0)
-		    (object UsesView "" @27
+			fill_color 	13434879
+			quidu      	"5BF5080A0065"
+			compartment 	(object Compartment
+			    Parent_View 	@26
+			    location   	(1111, 2193)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	6
+			    max_width  	621
+			    justify    	1)
+			width      	640
+			height     	392
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Transaccion" @27
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(371, 2250)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1825,15 +1889,40 @@
 			    strike     	FALSE
 			    color      	0
 			    default_color 	TRUE)
-			stereotype 	TRUE
+			label      	(object ItemLabel
+			    Parent_View 	@27
+			    location   	(141, 2019)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	460
+			    justify    	0
+			    label      	"Transaccion")
+			icon_style 	"Icon"
 			line_color 	3342489
-			quidu      	"5BF20BB902DE"
-			client     	@5
-			supplier   	@14
-			vertices   	(list Points
-			    (2200, 2137)
-			    (2475, 2007))
-			line_style 	0)
+			fill_color 	13434879
+			quidu      	"5BF20A2A0022"
+			compartment 	(object Compartment
+			    Parent_View 	@27
+			    location   	(141, 2081)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	8
+			    max_width  	526
+			    justify    	1)
+			width      	478
+			height     	486
+			annotation 	8
+			autoResize 	TRUE)
 		    (object UsesView "" @28
 			font       	(object Font
 			    size       	10
@@ -1846,12 +1935,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20BBD0270"
-			client     	@10
-			supplier   	@11
+			quidu      	"5BF20B880288"
+			client     	@3
+			supplier   	@27
 			vertices   	(list Points
-			    (1957, 537)
-			    (2249, 778))
+			    (382, 1561)
+			    (375, 2006))
 			line_style 	0)
 		    (object UsesView "" @29
 			font       	(object Font
@@ -1865,14 +1954,15 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20A2A007B"
-			client     	@14
-			supplier   	@11
+			quidu      	"5BF20B7B0342"
+			client     	@27
+			supplier   	@2
 			vertices   	(list Points
-			    (2642, 1620)
-			    (2497, 1113))
+			    (610, 2100)
+			    (928, 1905))
 			line_style 	0)
-		    (object UsesView "" @30
+		    (object AssociationViewNew "$UNNAMED$57" @30
+			location   	(855, 2279)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1884,14 +1974,167 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20BC3004E"
-			client     	@9
-			supplier   	@11
+			quidu      	"5BF5081A036B"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$58" @31
+				Parent_View 	@30
+				location   	(-567, -36)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5BF5081B0087"
+				client     	@30
+				supplier   	@27
+				vertices   	(list Points
+				    (855, 2279)
+				    (610, 2264))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$59" @32
+				Parent_View 	@30
+				location   	(-567, -36)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5BF5081B0089"
+				client     	@30
+				supplier   	@26
+				vertices   	(list Points
+				    (855, 2279)
+				    (1101, 2294))
+				line_style 	0)))
+		    (object ClassView "Class" "Logical View::Transaccion_Pre_Encuentro" @33
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2840, 1938)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@33
+			    location   	(2498, 1728)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	684
+			    justify    	0
+			    label      	"Transaccion_Pre_Encuentro")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5BF5080A0083"
+			compartment 	(object Compartment
+			    Parent_View 	@33
+			    location   	(2498, 1790)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	7
+			    max_width  	681
+			    justify    	1)
+			width      	702
+			height     	444
+			annotation 	8
+			autoResize 	TRUE)
+		    (object ClassView "Class" "Logical View::Encuentro" @34
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(4119, 2195)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@34
+			    location   	(3883, 1934)
+			    fill_color 	13434879
+			    nlines     	1
+			    max_width  	472
+			    justify    	0
+			    label      	"Encuentro")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"5BF20A2A007A"
+			compartment 	(object Compartment
+			    Parent_View 	@34
+			    location   	(3883, 1996)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    icon_style 	"Icon"
+			    fill_color 	13434879
+			    anchor     	2
+			    nlines     	9
+			    max_width  	470
+			    justify    	1)
+			width      	490
+			height     	546
+			annotation 	8
+			autoResize 	TRUE)
+		    (object UsesView "" @35
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5BF20BB902DE"
+			client     	@4
+			supplier   	@34
 			vertices   	(list Points
-			    (3106, 1003)
-			    (2652, 962))
+			    (2658, 2567)
+			    (3873, 2255))
 			line_style 	0)
-		    (object UsesView "" @31
+		    (object UsesView "" @36
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"5BF20A2A007B"
+			client     	@34
+			supplier   	@10
+			vertices   	(list Points
+			    (3873, 2009)
+			    (2652, 1096))
+			line_style 	0)
+		    (object UsesView "" @37
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1904,13 +2147,14 @@
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5BF20A2A007C"
-			client     	@14
-			supplier   	@15
+			client     	@34
+			supplier   	@13
 			vertices   	(list Points
-			    (2966, 1863)
-			    (3262, 1827))
+			    (4115, 1921)
+			    (4111, 1554))
 			line_style 	0)
-		    (object UsesView "" @32
+		    (object AssociationViewNew "$UNNAMED$60" @38
+			location   	(3532, 2076)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1922,14 +2166,33 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20BC60004"
-			client     	@7
-			supplier   	@9
-			vertices   	(list Points
-			    (3428, 399)
-			    (3408, 808))
-			line_style 	0)
-		    (object UsesView "" @33
+			quidu      	"5BF5081B03E3"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$61" @39
+				Parent_View 	@38
+				location   	(813, 403)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5BF5081C025F"
+				client     	@38
+				supplier   	@34
+				vertices   	(list Points
+				    (3532, 2076)
+				    (3873, 2144))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$62" @40
+				Parent_View 	@38
+				location   	(813, 403)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"5BF5081C0261"
+				client     	@38
+				supplier   	@33
+				vertices   	(list Points
+				    (3532, 2076)
+				    (3191, 2008))
+				line_style 	0)))
+		    (object UsesView "" @41
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1941,14 +2204,14 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20BC701E5"
-			client     	@8
-			supplier   	@7
+			quidu      	"5BF5080A0084"
+			client     	@33
+			supplier   	@5
 			vertices   	(list Points
-			    (2844, 308)
-			    (3158, 264))
+			    (2488, 1736)
+			    (2145, 1539))
 			line_style 	0)
-		    (object UsesView "" @34
+		    (object UsesView "" @42
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1960,12 +2223,12 @@
 			    default_color 	TRUE)
 			stereotype 	TRUE
 			line_color 	3342489
-			quidu      	"5BF20BC8014E"
-			client     	@8
-			supplier   	@10
+			quidu      	"5BF5080A0066"
+			client     	@26
+			supplier   	@4
 			vertices   	(list Points
-			    (2325, 351)
-			    (1957, 364))
+			    (1742, 2411)
+			    (2229, 2557))
 			line_style 	0)))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"5BF20A080237"
